@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:background="@color/football_bg"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+    <!-- 
+    <include layout="@layout/new_actionbar_default"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content">
+	</include>
+	 -->
+
+    <include layout="@layout/title_back"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <LinearLayout
+                android:id="@+id/mainlayout"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:gravity="center_horizontal"
+
+        >
+
+            <TextView
+                    android:visibility="gone"
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/kefuid"/>
+
+            <TextView
+                    android:visibility="gone"
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/yijianfankui"
+                    android:text="意见反馈"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:background="@drawable/select_line"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/margin"
+                          android:layout_marginBottom="@dimen/margin"
+
+                          android:orientation="horizontal">
+
+
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:background="@null"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/helpcenter"
+                        android:text="@string/help"/>
+                <ImageView
+                        style="@style/RealNext"/>
+            </LinearLayout>
+
+            <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tongzhi"
+                    android:layout_marginTop="5dp"
+                    android:text="购彩提醒"/>
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+            >
+
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/checkbox0"
+                        android:layout_alignTop="@+id/checkbox0"
+                        android:text="显示幸运一注"/>
+
+                <CheckBox
+                        android:id="@+id/checkbox0"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:background="@drawable/new_checkoff"
+                        android:button="@null"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+            >
+
+                <TextView
+                        android:id="@+id/yaoyaoxuanhao"
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/checkbox1"
+                        android:layout_alignTop="@+id/checkbox1"
+                        android:text="摇一摇选号"/>
+
+                <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:background="@drawable/new_checkoff"
+                        android:button="@null"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+            >
+
+                <TextView
+                        android:id="@+id/yilou"
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/checkbox2"
+                        android:layout_alignTop="@+id/checkbox2"
+                        android:text="显示遗漏"/>
+
+                <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/new_checkoff"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tuijian"
+                    android:layout_marginTop="5dp"
+                    android:text="好友推荐"/>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+
+            >
+
+                <TextView
+                        android:id="@+id/banben"
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/updateBtn"
+                        android:layout_alignTop="@+id/updateBtn"
+                        android:gravity="center_vertical"
+                        android:text="版本信息"/>
+
+                <TextView
+
+                        android:id="@+id/banbencontext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/textsize_normal"
+                        android:text="当前版本1.1.5"
+                        android:layout_alignBottom="@+id/updateBtn"
+                        android:layout_alignTop="@+id/updateBtn"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentRight="true"
+                />
+
+
+                <Button
+                        android:id="@+id/updateBtn"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/new_btn_duihuancaijin"
+                        android:text="立即更新"
+                        android:gravity="center"
+                        android:layout_marginRight="2dp"
+                        android:paddingBottom="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/normal_left_tv_setting"
+                    android:layout_margin="0dp"
+                    android:layout_marginTop="@dimen/margin"
+                    android:padding="6dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:id="@+id/youxiang"
+                        android:padding="0dp"
+
+                        android:text="@string/email"/>
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/margin"
+                        android:background="@null"
+                        android:textColor="@color/football_normal"
+
+                        android:gravity="right"
+
+                        android:padding="0dp"
+                        android:text="info@jiyunkeji.com"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/normal_left_tv_setting"
+                    android:layout_margin="0dp"
+                    android:id="@+id/ll_word"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin"
+                    android:padding="6dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:id="@+id/local"
+                        android:padding="0dp"
+
+                        android:text="@string/word"/>
+                <TextView
+                        style="@style/normal_left_tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/margin"
+                        android:background="@null"
+                        android:textColor="@color/football_normal"
+                        android:id="@+id/localname"
+                        android:gravity="right"
+                        android:padding="0dp"
+                        android:text="@string/localname"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                    android:visibility="gone"
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_btn_modifypw_states"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/modifypassword"
+                    android:text="修改密码"/>
+
+            <Button
+                    android:id="@+id/tuichuibtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="退出当前账户"
+                    android:textColor="@color/yellow"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

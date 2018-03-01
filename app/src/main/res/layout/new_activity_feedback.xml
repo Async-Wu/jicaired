@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title_back" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_loading" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_failed"
+        android:visibility="gone" >
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/yijianedite"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/longedittextbg"
+            android:gravity="left|top"
+            android:hint="欢迎留言,我们竭诚为你服务!"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:minLines="6"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_normal" />
+
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/yijianedite"
+            android:layout_below="@+id/yijianedite"
+            android:layout_marginTop="5dp"
+
+            android:text="发送"
+            android:textColor="@color/yellow" />
+
+        <com.chengyi.app.view.scoller.MyRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/yijianedite"
+            android:layout_marginTop="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

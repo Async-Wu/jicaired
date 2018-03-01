@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_pop_bg" />
+
+    <LinearLayout
+        android:id="@+id/layouttopselect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        
+        android:paddingLeft="@dimen/gap_s"
+        android:paddingRight="@dimen/gap_s"
+        android:paddingTop="@dimen/gap_l"
+        android:paddingBottom="@dimen/gap_l" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_line"
+            android:paddingBottom="@dimen/gap_s"
+            android:paddingTop="@dimen/gap_s"
+            android:text="冠军竞猜"
+            android:textColor="@color/new_btn_selector_football"
+            android:textSize="@dimen/text_size_s" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_ms"
+            android:layout_weight="1"
+            android:background="@drawable/select_line"
+            android:paddingBottom="@dimen/gap_s"
+            android:paddingTop="@dimen/gap_s"
+            android:text="冠亚军竞猜"
+            android:textColor="@color/new_btn_selector_football"
+            android:textSize="@dimen/text_size_s" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:background="@color/football_bg"
+             android:layout_height="match_parent">
+    <LinearLayout
+            
+            android:layout_width="match_parent"
+            
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        
+        <include
+                android:id="@+id/top"
+                layout="@layout/title_back"/>
+        <include
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ffootballtopbarLayout"
+                layout="@layout/new_activity_failed"
+        
+        >
+        </include>
+        <include
+              android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ffootballtopbarLayout"
+                layout="@layout/new_activity_loading"
+    
+        >
+        </include>
+        
+        <LinearLayout
+                
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_avter"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/football_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin">
+            
+            <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/iv_lottery"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/touxiang"
+            />
+            
+            <TextView
+                    style="@style/MeTxt"
+                    android:id="@+id/tv_lottery_name"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lscolor"
+                    android:layout_marginBottom="@dimen/margin_half"
+                    tools:text="cshi"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/ll_follow"
+        >
+            <View style="@style/Line_Item"
+            />
+            
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:padding="6dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/fangan_follow_me_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/red"/>
+                
+                <TextView
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/fangan_follow_me"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="自动跟单"/>
+            </LinearLayout>
+        
+        </LinearLayout>
+        
+        <View style="@style/Line_Item"/>
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/fangan_schemeId"
+                    android:textSize="@dimen/txt_item_size"
+                    style="@style/OrderTxt"
+                    
+            />
+            <View style="@style/Line_V_Item" android:layout_marginTop="3dp"
+                  android:layout_marginBottom="3dp"/>
+            
+            <TextView
+                    android:id="@+id/fangan_initiateTime"
+                    android:text=""
+                    android:textSize="@dimen/txt_item_size"
+                    style="@style/OrderTxt"/>
+        
+        
+        </LinearLayout>
+        <View style="@style/Line_Item"/>
+        
+        
+        <View style="@style/Line_Item"
+              android:layout_marginTop="@dimen/margin"/>
+        
+        
+        <View style="@style/Line_Item"/>
+        <TableLayout android:layout_width="match_parent"
+                     android:background="@color/white"
+                     android:paddingTop="@dimen/padding_half"
+                     android:paddingBottom="@dimen/padding_half"
+                     android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                        android:text="投注金额"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/margin"
+                        style="@style/OrderTxt"/>
+                <TextView
+                        android:text="订单状态"
+                        style="@style/OrderTxt"/>
+                <TextView
+                        android:text="中奖金额"
+                        android:layout_marginRight="@dimen/margin"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        style="@style/OrderTxt"/>
+            </TableRow>
+            <TableRow>
+                
+                <TextView
+                        android:id="@+id/fangan_schemeAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:textColor="@color/football_normal"
+                        style="@style/OrderTxt"/>
+                <TextView
+                        android:id="@+id/fangan_statusDesc"
+                        android:textColor="@color/football_normal"
+                        style="@style/OrderTxt"/>
+                <TextView
+                        android:id="@+id/fangan_get_money"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        android:text="@string/_0_00"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textColor="@color/football_normal"
+                        style="@style/OrderTxt"/>
+            </TableRow>
+        </TableLayout>
+        <View style="@style/Line_Item"/>
+        
+        
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:background="@color/football_bg"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/fangan_touzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="#000"/>
+        </LinearLayout>
+        
+        <View style="@style/Line_Item" android:layout_marginTop="@dimen/margin"/>
+        <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin">
+            <TextView style="@style/OrderTxt"
+                      android:layout_width="wrap_content"
+                      android:text="投注信息"/>
+            
+            <TextView
+                    android:id="@+id/fangan_schemefangan"
+                    android:background="@drawable/green_radius"
+                    android:text=""
+                    android:textColor="@color/white"
+                    style="@style/OrderTxt.Radius"/>
+            <TextView
+                    android:id="@+id/fangan_schemeNumberUnit"
+                    
+                    style="@style/OrderTxt.Radius"/>
+            
+            <TextView
+                    android:id="@+id/fangan_multipe"
+                    style="@style/OrderTxt.Radius"
+                    android:background="@drawable/blue_radius"
+            />
+        </LinearLayout>
+        <View style="@style/Line_Item"
+              android:layout_marginBottom="@dimen/margin"
+        />
+        <!--<TextView
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_marginLeft="40dp"
+            android:text="dfjsinifsdns"
+            android:id="@+id/fangan_drawnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <include
+                android:visibility="gone"
+                android:id="@+id/games_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_order_title">
+        </include>
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/fangan_xianshinote"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:text="该方案跟单或截至后可见"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ListView
+                android:background="#fff"
+                android:divider="@color/transparent"
+                android:paddingLeft="@dimen/margin_half"
+                android:cacheColorHint="@color/transparent"
+                android:dividerHeight="0dp"
+                android:layout_weight="1"
+                
+                android:id="@+id/fangan_drawnumber"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+        ></ListView>
+    
+        <View style="@style/Line_Item" android:layout_marginTop="@dimen/margin"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:background="@color/white"
+                      android:padding="@dimen/margin_half"
+                      android:layout_height="wrap_content">
+            <TextView style="@style/OrderTxt"
+                      android:layout_width="wrap_content"
+                      android:text="发起合买人:"
+                      android:id="@+id/tv_is_hemai"
+                      android:textColor="@color/lscolor"
+                      android:layout_weight="0"/>
+            <TextView style="@style/OrderTxt"
+                      android:gravity="left"
+                      android:id="@+id/tv_is_name"
+                      android:textColor="@color/football_normal"/>
+        </LinearLayout>
+        <View style="@style/Line_Item"/>
+        <LinearLayout
+            
+                android:layout_gravity="bottom"
+                android:id="@+id/bottomlayoutbuy"
+      
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+        
+            <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/new_icon_sh"/>
+        
+            <TextView
+                    android:id="@+id/goumai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:orientation="horizontal"
+             >
+        
+        <Button
+                android:id="@+id/xiangqing_image"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bianbutton"
+                android:text="图片"
+                android:textColor="#f51906"/>
+        
+        <Button
+                android:id="@+id/xiangqing_contact"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bianbutton"
+                android:text="留言"
+                android:textColor="#f51906"/>
+    </LinearLayout>
+   
+</FrameLayout>
+

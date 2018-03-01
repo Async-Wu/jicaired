@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/exit_bg"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+>
+    <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:gravity="center"
+            android:background="@color/white"
+    >
+        <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_group_size"
+                android:text="@android:string/dialog_alert_title"
+                android:textColor="@color/football_grey"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/ll_title"
+            android:layout_height="wrap_content"
+            android:id="@+id/con"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/margin_m"
+    >
+        <TextView
+
+                android:id="@+id/centerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_item_size"
+                android:text="@string/fangqixuanhao"
+                android:textColor="@color/red"
+        />
+    </LinearLayout>
+
+    <View style="@style/Line_Item"
+     android:layout_above="@id/bottom"/>
+
+    <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_below="@id/con"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/buttonno"
+                style="@style/BtnOk.Cancle"
+                android:text="@android:string/cancel"
+
+        />
+        <View
+                style="@style/Line_V_Item"
+                android:id="@+id/v_in"
+        />
+        <Button
+
+                android:id="@+id/buttonyes"
+                android:text="@android:string/ok"
+                style="@style/BtnOk"
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>

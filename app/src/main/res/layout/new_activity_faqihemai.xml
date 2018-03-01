@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/faqihemai_main_layout"
+                android:layout_width="fill_parent"
+                android:background="@color/football_bg"
+                android:layout_height="fill_parent">
+
+    <include
+            android:id="@+id/toplayout"
+            layout="@layout/title_back"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sv"
+            android:layout_below="@id/toplayout">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:id="@+id/textView1"
+                        style="@style/FaqiHemaiTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_offleft"
+                        android:visibility="gone"
+                        android:text="@string/fanganneirong2"/>
+
+                <TextView
+                        android:id="@+id/content"
+                        style="@style/FaqiHemaiTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="5注1倍1期,共10元"/>
+            </LinearLayout>
+            <View style="@style/Line"/>
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                <View style="@style/Line_Item"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <View style="@style/Line_V_Item"/>
+                    <TextView
+
+                            android:text="@string/woyaorengou"
+                            style="@style/Toget"/>
+                    <View style="@style/Line_V_Item"/>
+                    <EditText
+                            android:id="@+id/woyaorengouedit"
+                            android:hint="最少1元"
+                            style="@style/TogetEdit"/>
+                    <View style="@style/Line_V_Item"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical">
+                <View style="@style/Line_Item"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <View style="@style/Line_V_Item"/>
+                    <TextView
+                            style="@style/Toget"
+                            android:text="@string/zuidirengou2"
+
+                    />
+                    <View style="@style/Line_V_Item"/>
+                    <EditText
+                            android:id="@+id/zuidiexite"
+                            android:hint="默认最少1元"
+                            style="@style/TogetEdit"/>
+                    <View style="@style/Line_V_Item"/>
+                </LinearLayout>
+                <View style="@style/Line_Item"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+
+                    android:gravity="center_vertical"
+
+                    android:orientation="vertical">
+                <View style="@style/Line_Item"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <View style="@style/Line_V_Item"/>
+                    <TextView
+                            style="@style/Toget"
+                            android:text="@string/woyaobaodi"
+                    />
+                    <View style="@style/Line_V_Item"/>
+                    <EditText
+                            android:id="@+id/baodijine"
+                            style="@style/TogetEdit"
+                            android:hint="若保底,最少保底1元"
+                    />
+                    <View style="@style/Line_V_Item"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                <View style="@style/Line_Item"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <View style="@style/Line_V_Item"/>
+                    <TextView
+                            style="@style/Toget"
+                            android:text="@string/yingliyongjin"
+                    />
+                    <View style="@style/Line_V_Item"/>
+                    <EditText
+                            android:id="@+id/yongjinedit"
+                            style="@style/TogetEdit"
+                            android:hint="0%"
+                    />
+                    <View style="@style/Line_V_Item"/>
+                </LinearLayout>
+                <View style="@style/Line_Item"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                <View style="@style/Line_Item"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <View style="@style/Line_V_Item"/>
+                    <Button
+                            android:id="@+id/gongkaiBtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp"
+                            android:textSize="@dimen/pop_item_size"
+                            android:layout_height="wrap_content"
+                            android:textColor="@drawable/text_color"
+                            android:text="方案公开"
+                            android:background="@drawable/select_no_line"/>
+                    <View style="@style/Line_V_Item"/>
+                    <Button
+                            android:id="@+id/gendanbtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@drawable/text_color"
+                            android:text="跟单可见"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp"
+                            android:textSize="@dimen/pop_item_size"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/select_no_line"/>
+                    <View style="@style/Line_V_Item"/>
+                    <Button
+                            android:id="@+id/jiezhibtn"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="4dp"
+                            android:paddingTop="4dp"
+                            android:textSize="@dimen/pop_item_size"
+                            android:text="截至后可见"
+
+                            android:layout_height="wrap_content"
+                            android:textColor="@drawable/text_color"
+                            android:background="@drawable/select_no_line"/>
+                    <View style="@style/Line_V_Item"/>
+                </LinearLayout>
+                <View style="@style/Line_Item"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/fanganmiaoshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:visibility="gone"
+                        android:text="@string/fanganmiaoshu"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                <EditText
+                        android:id="@+id/fanganmiaoshuEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_toget"
+                        android:layout_marginLeft="@dimen/margin_m"
+                        android:paddingTop="@dimen/margin_m"
+                        android:layout_marginRight="@dimen/margin_m"
+                        android:background="@drawable/num_bg_large"
+                        android:gravity="left|top"
+                        android:inputType="textMultiLine"
+                        android:minLines="7"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/lscolor"
+                        android:textSize="@dimen/text_size_s"/>
+            </RelativeLayout>
+            <Button
+                    android:id="@+id/querentouzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认"
+                    android:paddingTop="@dimen/margin_m"
+                    android:paddingBottom="@dimen/margin_m"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/btn_txt"
+                    android:paddingRight="@dimen/margin_double"
+                    android:paddingLeft="@dimen/margin_double"
+                    android:layout_marginTop="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:background="@drawable/red_bg"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

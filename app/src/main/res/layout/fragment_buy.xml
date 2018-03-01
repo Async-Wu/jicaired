@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent"
+                 android:id="@+id/fl_title"
+                 android:layout_height="wrap_content">
+        <include
+                layout="@layout/title_buy"/>
+        <include layout="@layout/pop_search"
+                 android:visibility="gone"
+        />
+    </FrameLayout>
+
+    <FrameLayout
+            android:layout_below="@id/fl_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <include
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    layout="@layout/new_activity_loading">
+            </include>
+
+            <include
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/ffootballtopbarLayout"
+                    layout="@layout/new_activity_failed">
+            </include>
+
+            <LinearLayout
+                    android:id="@+id/mainlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ffootballtopbarLayout"
+                    android:orientation="vertical"
+            >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F4F4F4"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            style="@style/whw.Img"
+                            android:id="@+id/buttonjindu"
+                            android:src="@drawable/new_jindu_btn_states"/>
+
+                    <ImageView
+                            style="@style/whw.Img"
+                            android:id="@+id/buttonzongjine"
+                            android:src="@drawable/new_zongjine_btn_states"/>
+
+                    <ImageView
+                            style="@style/whw.Img"
+                            android:id="@+id/buttonshengyu"
+                            android:src="@drawable/new_shengyu_btn_states"/>
+
+                    <ImageView
+                            style="@style/whw.Img"
+                            android:id="@+id/buttonredu"
+                            android:src="@drawable/new_redu_btn_states"/>
+
+                </LinearLayout>
+
+                <include
+                        layout="@layout/item_no_data"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></include>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    <com.chengyi.app.view.scoller.MyRefreshListView
+                            android:id="@+id/pulllayout"
+                            android:scrollbars="none"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:id="@+id/ll_pop"
+                android:visibility="gone"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/bottom_height">
+    <View style="@style/Line"/>
+    <LinearLayout android:id="@+id/rg_bottom"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+        <ImageView
+                android:src="@drawable/draw_home"
+                android:id="@+id/rb_home"
+                style="@style/HomeBottom"/>
+
+        <ImageView
+                android:id="@+id/rb_buy"
+                android:src="@drawable/draw_2_buy"
+                style="@style/HomeBottom"/>
+        <ImageView
+                android:id="@+id/rb_get"
+                android:src="@drawable/draw_get"
+                style="@style/HomeBottom"/>
+
+        <ImageView
+                android:id="@+id/rb_dicover"
+                android:src="@drawable/draw_discover"
+                style="@style/HomeBottom"/>
+        <ImageView
+                android:id="@+id/rb_me"
+                android:src="@drawable/draw_me"
+                style="@style/HomeBottom"/>
+    </LinearLayout>
+</LinearLayout>

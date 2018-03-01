@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/gap_s" 
+                android:paddingRight="@dimen/gap_s"
+                android:paddingTop="@dimen/gap_ms"
+                android:paddingBottom="@dimen/gap_ms">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/lottery_icon_size"
+        android:layout_height="@dimen/lottery_icon_size"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/jifen_wupindefault" />
+
+    <Button
+        android:id="@+id/shiwubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:background="@drawable/new_btn_duihuanshiwu"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="兑换实物"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/caijinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/new_btn_duihuancaijin"
+        android:text="兑换彩金10000元"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_below="@id/shiwubtn"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/prizename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shiwubtn"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="@dimen/gap_xs"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/shiwubtn"
+        android:layout_toRightOf="@+id/imageView1"
+        android:paddingTop="5dp"
+        android:text="50块移动充值卡一张"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prizename"
+        android:layout_alignTop="@+id/caijinbtn"
+        android:text="需要积分:"
+        android:paddingTop="5dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/jifentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:text="1000万"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+           

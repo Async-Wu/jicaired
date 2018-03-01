@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:paddingTop="4dp"
+              android:paddingBottom="4dp"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/iv"
+            android:src="@drawable/lauch"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/MeTxt"
+                android:id="@+id/tv_hemai_title"
+                android:textSize="14sp"
+                android:text="11"
+                android:textColor="@color/black"/>
+
+        <TextView
+                style="@style/MeTxt"
+                android:textSize="14sp"
+                android:text="混投"
+                android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/MeTxt"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+        <TextView
+                style="@style/MeTxt"
+                android:id="@+id/tv_time"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_zjmx_list_bg_states"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@drawable/next" />
+    <TextView
+        android:id="@+id/mingchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="彩票代购" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mingchen"
+        android:layout_alignTop="@+id/mingchen"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:paddingLeft="2dp"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="11111"
+        android:textColor="@color/grey_txt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/moneynum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mingchen"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:textSize="14sp"
+
+        android:textColor="@color/grey_txt"
+        android:text="222222" />
+
+    <TextView
+        android:id="@+id/zhanghuyuetv"
+         android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/moneynum"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/moneynum"
+        android:text="4554"
+        android:textColor="@color/grey_txt"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zhanghuyuetv"
+        android:layout_alignTop="@+id/zhanghuyuetv"
+        android:layout_toLeftOf="@+id/zhanghuyuetv"
+        android:text="余额:"
+        android:textColor="@color/grey_txt"
+        android:textSize="12sp" />
+
+ <View style="@style/Line_Item"
+       android:layout_alignParentBottom="true"/>
+   
+</RelativeLayout>

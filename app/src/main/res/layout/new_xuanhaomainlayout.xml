@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:background="@color/football_bg"
+        android:orientation="vertical"
+        >
+
+
+    <include layout="@layout/item_history_issue"/>
+
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/qiulayout"
+            android:fillViewport="true">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+            <View style="@style/Line_Item"/>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contenthistorydownTwo"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="0dp"
+                    android:visibility="gone"
+
+                    android:gravity="center_vertical"
+                    >
+
+
+                <TextView
+                        android:id="@+id/dangqijiezhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前20130801056期"
+                        android:textColor="@color/jiangchi"
+
+                        android:textSize="@dimen/mytextsize_normal"
+                        />
+
+                <TextView
+                        android:id="@+id/jiangchitext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+
+                        android:layout_toRightOf="@id/dangqijiezhi"
+                        android:textColor="@color/jiangchi"
+                        android:textSize="@dimen/mytextsize_normal"
+                        />
+
+                <TextView
+                        android:id="@+id/jiezhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="截止:"
+                        android:layout_toLeftOf="@+id/shengyushijiantext"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/jiangchi"
+                        android:textSize="@dimen/mytextsize_normal"/>
+
+                <TextView
+                        android:id="@+id/shengyushijiantext"
+                        android:layout_width="@dimen/textsize_width"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/jiangchi"
+                        android:textSize="@dimen/mytextsize_normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    >
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:id="@+id/qianqu_tip_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+
+                            >
+
+                        <TextView
+                                android:id="@+id/qianqutishispecial"
+
+                                style="@style/tip_text_style"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:text="数投:"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        <TextView
+                                android:id="@+id/qianqutishi"
+                                android:layout_marginLeft="1dp"
+                                style="@style/tip_text_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tishitext"
+                            android:text="这里是提示"
+                            android:visibility="gone"
+
+                            android:layout_width="wrap_content"
+                            android:background="@color/red"
+                            android:layout_height="wrap_content"
+                            style="@style/tip_text_style"
+                            />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/qianqu_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+
+                    android:orientation="vertical"
+                    android:paddingBottom="3dip"
+                    >
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/hongtou_tip_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginTop="10dp"
+                    >
+
+                <TextView
+                        android:layout_marginLeft="7dp"
+                        style="@style/tip_text_style"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="红投:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                <TextView
+                        android:layout_marginLeft="3dp"
+                        style="@style/tip_text_style"
+                        android:text="@string/dianjixiafangquyujikecanyu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/hongtoutishitext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tip_text_style"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:visibility="gone"
+                    android:text="@string/shouweihaomwei19huo20"
+                    />
+
+            <LinearLayout
+                    android:id="@+id/hongtou_ball_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/h_ball_red_bg"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="@dimen/margin"
+                    android:paddingRight="@dimen/margin"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="5dip">
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/hongtou_ball_yilou_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+                <TextView
+                        android:id="@+id/yilouspecial"
+                        android:textColor="@color/tip_color"
+                        android:text="遗漏"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/label_bg"
+                        />
+
+                <LinearLayout
+                        android:id="@+id/hongtou_ball_yilou_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dip">
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/houqu_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="1dip">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

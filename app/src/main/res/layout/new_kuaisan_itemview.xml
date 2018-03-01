@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/select_half_line"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="@dimen/kuaisanhezhi"
+            android:gravity="center"
+	        android:orientation="vertical" >
+	        <TextView
+	            android:id="@+id/numtext"
+	            style="@style/textKS"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="3" />
+            <TextView
+                android:id="@+id/jiangjintext"
+	            style="@style/textKS2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="奖金240元" />
+</LinearLayout>
+

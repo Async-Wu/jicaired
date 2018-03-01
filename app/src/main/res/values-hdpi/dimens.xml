@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- /* ** ** Copyright 2008, The Android Open Source Project ** ** Licensed 
+	under the Apache License, Version 2.0 (the "License"); ** you may not use 
+	this file except in compliance with the License. ** You may obtain a copy 
+	of the License at ** ** http://www.apache.org/licenses/LICENSE-2.0 ** ** 
+	Unless required by applicable law or agreed to in writing, software ** distributed 
+	under the License is distributed on an "AS IS" BASIS, ** WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. ** See the License 
+	for the specific language governing permissions and ** limitations under 
+	the License. */ -->
+
+<resources> 
+    <dimen name="gap_xxs">2dp</dimen>
+       <dimen name="gap_xs">3dp</dimen>
+    <dimen name="gap_s">5dp</dimen>
+    <dimen name="gap_ms">8dp</dimen>
+	<dimen name="gap_m">11dp</dimen>
+	<dimen name="gap_ml">14dp</dimen>
+	<dimen name="gap_l">17dp</dimen>
+	<dimen name="gap_xl">19dp</dimen>
+    
+     <dimen name="user_center_icon_padding">10dp</dimen>
+	 <dimen name="user_center_icon_padding_l">18dp</dimen>
+	   <dimen name="usercenter_drawer_margin_bottom">59dip</dimen>
+	 <dimen name="usercenter_bottom_block">54dip</dimen>
+    
+    <dimen name="touzhu_btn_textsize">18sp</dimen>
+	<dimen name="jindu_size">25sp</dimen>
+    <dimen name="baodi_size">8sp</dimen>
+    <dimen name="mytextsize_normal">11sp</dimen>
+    <dimen name="textsize_width">65sp</dimen>
+    	<dimen name="textsize_cp">16sp</dimen>
+	<dimen name="textsize_wf">12sp</dimen>
+	<dimen name="layout_offleft">15sp</dimen>
+	<dimen name="textsize_fqhm">14sp</dimen>
+	<dimen name="quedingbtn_padding">253dp</dimen>
+	<dimen name="zhineg_padding">25dp</dimen>
+	<dimen name="hemai_width">82dp</dimen>
+	<dimen name="textsize_kj_name">13sp</dimen>
+	<dimen name="textsize_kj_time">12sp</dimen>
+	<dimen name="textsize_kj_time1">11sp</dimen>
+	<dimen name="caipiaodating_pedding_bottom">10dp</dimen>
+	<dimen name="shaixlength1">80dp</dimen>
+	<dimen name="shaixlength2">40dp</dimen>
+	<dimen name="luckytop">8dp</dimen>
+    <dimen name="jingcaihistory">80dp</dimen>
+    
+    
+    
+	<dimen name="text_size_xxs">10sp</dimen>
+	<dimen name="text_size_xs">12sp</dimen>
+    <dimen name="text_size_sxs">13sp</dimen>
+	<dimen name="text_size_s">14sp</dimen>
+	<dimen name="text_size_m">16sp</dimen>	
+	<dimen name="text_size_l">18sp</dimen>
+	<dimen name="text_size_xl">20sp</dimen>
+	<dimen name="list_view_divider_height">0.5dip</dimen>
+	<dimen name="list_view_padding">7dip</dimen>
+	<dimen name="list_view_gap_m">4dip</dimen>
+	<dimen name="list_view_gap_s">3dip</dimen>
+	
+	<dimen name="actionbar_height">46dip</dimen>
+	 <dimen name="sub_actionbar_height">38dip</dimen>
+	 <dimen name="actionbar_button_min_width">54dip</dimen>
+	 
+	 <dimen name="lottery_icon_size">54dip</dimen>
+    <dimen name="padding_toget">37dp</dimen>
+    <dimen name="txt_item_title_size">22sp</dimen>
+	<dimen name="txt_item_size">18sp</dimen>
+	<dimen name="margin_m">16dp</dimen>
+	<dimen name="title_size">24sp</dimen>
+    <dimen name="txt_item_small_size">15sp</dimen>
+	<dimen name="txt_item_time">16sp</dimen>
+    <dimen name="txt_group_size">20sp</dimen>
+    <dimen name="margin_double">33dp</dimen>
+    <dimen name="btn_txt">23sp</dimen>
+	<dimen name="btn_padding">17dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="pop_item_size">19sp</dimen>
+    <dimen name="xia_height">10dp</dimen>
+	<dimen name="xia_width">20dp</dimen>
+    <dimen name="bottom_height">67dp</dimen>
+    <dimen name="margin_double_doule">44dp</dimen>
+    <dimen name="pop_txt_small">14sp</dimen>
+
+</resources>

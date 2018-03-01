@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="false"
+    android:duplicateParentState="true"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/gap_xs"
+    android:paddingTop="@dimen/gap_xs" >
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="@dimen/lottery_icon_size"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="01"
+        android:textColor="@color/lscolor"
+        android:textSize="@dimen/text_size_s" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap_xs"
+        android:background="@drawable/select_line"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingTop="@dimen/gap_ms"
+        android:paddingBottom="@dimen/gap_ms">
+        
+        <ImageView 
+            android:id="@+id/duiwu1_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_xl"
+            android:scaleType="centerInside"
+            android:layout_marginRight="@dimen/gap_xs"
+            />
+
+        <TextView
+            android:id="@+id/duiwu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:text="巴西"
+            android:textColor="@color/new_btn_selector_football"
+            android:textSize="@dimen/text_size_s" />
+        <TextView
+            android:id="@+id/duiwu_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:text=" -- "
+            android:textColor="@color/new_btn_selector_football"
+            android:textSize="@dimen/text_size_s" />
+        <TextView
+            android:id="@+id/duiwu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:text="西班牙"
+            android:textColor="@color/new_btn_selector_football"
+            android:textSize="@dimen/text_size_s" />
+<ImageView 
+            android:id="@+id/duiwu2_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_xl"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="@dimen/gap_xs"
+            />
+        <TextView
+            android:id="@+id/speilv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_xs"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:text="0.00"
+            android:textColor="@color/new_btn_selector_shengfu14chang"
+            android:textSize="@dimen/text_size_s" />
+    </LinearLayout>
+
+</LinearLayout>

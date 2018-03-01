@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<LinearLayout
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:id="@+id/toplayout" 
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+    <LinearLayout
+       
+        android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginTop="@dimen/gap_s"
+	    android:layout_marginLeft="@dimen/gap_s">
+	    <RelativeLayout 
+	           android:layout_width="0dip"
+	           android:layout_height="fill_parent"
+	           android:layout_weight="2"
+	        >
+	        <ImageView
+	            android:id="@+id/iconimage"
+	            android:layout_width="@dimen/lottery_icon_size"
+	            android:layout_height="@dimen/lottery_icon_size"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/list_cpicon6cb" />
+           <TextView
+	            android:id="@+id/cpname"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/iconimage"
+	            android:layout_toRightOf="@+id/iconimage"
+	            android:text="新11选5"
+	            android:layout_marginLeft="@dimen/gap_s"
+	            android:layout_marginTop="5dp"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/text_size_s" />
+	        <TextView
+	            android:id="@+id/cpissue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/iconimage"
+	            android:layout_alignLeft="@+id/cpname"
+	            android:textSize="14sp"
+	            android:layout_marginBottom="5dp"
+	            android:textColor="@color/black"
+	            android:text="123" />
+
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/iconimage"
+	            android:layout_alignBottom="@+id/iconimage"
+	            android:background="@drawable/detail_tableline" />
+	        
+	    </RelativeLayout>
+	    <RelativeLayout 
+	           android:layout_width="0dip"
+	           android:layout_height="fill_parent"
+	           android:layout_weight="1"
+	           android:gravity="center"
+	        >
+	        <TextView
+	            android:id="@+id/textViewstatus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:textSize="14sp"
+	            android:textColor="@color/black"
+	            android:text="追号中" />
+	        <LinearLayout 
+	            android:id="@+id/zhongjianlayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_centerInParent="true"
+	            android:visibility="gone"
+	            >
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="14sp"
+	                android:textColor="@color/black"
+	                android:text="中奖金额" />
+	            <TextView
+	                android:id="@+id/zhongmoney"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="14sp"
+	                android:textColor="@color/ywcolor"
+	                android:gravity="center"
+	                android:text="元" />
+	            
+	        </LinearLayout>
+	    </RelativeLayout>
+	</LinearLayout>
+	<ImageView
+	    android:id="@+id/wavimg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/detail_wavyline" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              android:layout_height="fill_parent"
+
+          >
+
+    <include layout="@layout/title_back"/>
+
+
+    <com.chengyi.app.view.ClearEditText
+            android:id="@+id/zhanghao"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/val"
+            style="@style/Pwd"
+            android:hint="@string/login_forget_pw_username"/>
+
+    <View
+            style="@style/Line_Item"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"/>
+
+    <com.chengyi.app.view.ClearEditText
+            android:id="@+id/EditText02"
+            style="@style/Pwd"
+            android:drawableLeft="@drawable/phone"
+
+            android:hint="@string/login_forget_pw_phonenum"
+            />
+    <View
+            style="@style/Line_Item"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_double"
+            android:layout_marginRight="@dimen/margin"/>
+    <Button
+            android:id="@+id/querenbtn"
+            style="@style/btn"
+            android:text="@string/btn_ok"
+
+            android:layout_margin="16dp"
+          />
+
+
+</LinearLayout>

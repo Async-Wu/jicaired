@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/radius_t_bg"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/bisailayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_m"
+            style="@style/ItemLLTitlle">
+
+        <TextView
+                android:id="@+id/zhudui"
+                style="@style/ItemTitlte"
+                android:text="大阪樱花"
+        />
+
+        <TextView
+                android:id="@+id/duizhen"
+                style="@style/ItemTitlte_Sub"
+                android:text="VS"
+        />
+
+        <TextView
+                android:id="@+id/kedui"
+                android:text="大阪樱花"
+                style="@style/ItemTitlte"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_m"
+            android:paddingRight="@dimen/margin_m"
+            android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <View style="@style/Line_Item"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="match_parent">
+                <View style="@style/Line_V_Item"/>
+                <TextView style="@style/BTitle"
+                          android:text="@string/bqc"
+                          android:background="#F77C51"
+                          android:layout_weight="0"
+                          android:textColor="@color/white"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View style="@style/Line_Item"/>
+
+
+        </LinearLayout>
+        <View style="@style/Line_V_Item"/>
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <View style="@style/Line_Item"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+
+                          android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_1"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="胜胜"/>
+                    <TextView
+                            android:id="@+id/tv_s_1"
+                            android:text="2:0" style="@style/ItemThird"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_2"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+
+
+                              android:text="胜平"/>
+                    <TextView
+                            android:id="@+id/tv_s_2"
+                            android:button="@null"
+                            style="@style/ItemThird"
+                            android:text="3:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_3"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="胜负"/>
+                    <TextView
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+
+                            android:id="@+id/tv_s_3"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+
+            </LinearLayout>
+            <View style="@style/Line_Item"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_4"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="平胜"/>
+                    <TextView
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_4"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_5"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="平平"/>
+                    <TextView
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_5"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_6"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="平负"/>
+                    <TextView
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_6"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+            </LinearLayout>
+            <View style="@style/Line_Item"/>
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_7"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="负胜"/>
+                    <TextView
+
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_7"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_8"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="负平"/>
+                    <TextView
+
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_8"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/ll_s_9"
+                              style="@style/ItemThird"
+                              android:layout_weight="1">
+                    <TextView style="@style/TvBiff"
+                              android:text="负负"/>
+                    <TextView
+                            android:button="@null"
+                            style="@style/ItemThird"
+
+                            android:id="@+id/tv_s_9"
+                            android:text="1:0"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+
+            </LinearLayout>
+            <View style="@style/Line_Item"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_double"
+            android:layout_height="@dimen/bottom_height"
+            android:gravity="center_vertical"
+            android:focusable="false"
+    >
+        <Button
+                android:id="@+id/btn_cancle"
+                style="@style/BtnOk.Cancle"
+                android:text="取消"
+        />
+        <Button
+                android:id="@+id/btn_ok"
+                android:text="确定"
+                style="@style/BtnOk"/>
+
+    </LinearLayout>
+
+
+    v
+
+
+</LinearLayout>

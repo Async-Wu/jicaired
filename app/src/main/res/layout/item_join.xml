@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/item_joinuser"
+                android:text="参与者"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/item_joinmoney"
+                android:text="参与金额"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/item_joinbaifen"
+                android:text="参与股份"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:id="@+id/item_jointime"
+                android:text="参与时间"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

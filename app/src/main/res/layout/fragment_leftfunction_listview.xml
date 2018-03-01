@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/caipiaolayout"
+    android:paddingTop="@dimen/gap_xxs"
+    android:paddingBottom="@dimen/gap_xxs"
+    >
+    <ImageView
+        android:id="@+id/imageView1"
+     style="@style/RealNext"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/gap_xs"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/lottery_icon_size"
+        android:layout_height="@dimen/lottery_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/gap_m"
+        android:layout_marginRight="@dimen/gap_m"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:layout_marginBottom="@dimen/gap_xs"
+        android:contentDescription="@null"
+        android:src="@drawable/list_cpiconp3"
+        android:scaleType="fitCenter"
+       />
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView2"
+        android:gravity="center|left"
+        android:layout_centerVertical="true"
+        >
+        
+         <TextView
+        android:id="@+id/caipiaoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m"
+        android:text="排列3" />
+
+    <TextView
+        android:id="@+id/issueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/caipiaoname"
+        android:text="222"
+        android:textSize="@dimen/text_size_sxs"
+        android:textColor="@color/datingcolor" />
+
+    <TextView
+        android:id="@+id/remaintime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@id/caipiaoname"
+        android:layout_toRightOf="@+id/issueText"
+        android:gravity="center"
+        android:text="111"
+         android:layout_marginTop="5dp"
+        android:textColor="@color/datingcolor"
+        android:textSize="@dimen/text_size_sxs" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/caipiaoname"
+        android:gravity="center"
+        android:paddingRight="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:text="热门"
+        android:paddingLeft="2dp"
+        android:background="@drawable/kaijiang"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xs" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@drawable/kaijiang1" />
+     <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView3"
+        android:gravity="center"
+        android:text=""
+        android:visibility="gone"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/kaijiang"
+        android:textSize="@dimen/text_size_sxs" />
+        
+    </RelativeLayout>
+    
+   
+    
+</RelativeLayout>

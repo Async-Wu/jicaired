@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+ 
+    <LinearLayout
+            android:paddingTop="4dp"
+            android:background="@color/white"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                style="@style/OrderTxt.Sub"
+                android:id="@+id/item_footmatchcode"
+                android:text="场次"
+                android:layout_weight="0"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/txt_item_small_size"
+        />
+        
+        <TextView
+                style="@style/OrderTxt.Sub"
+                android:id="@+id/item_foothostname"
+                android:textSize="@dimen/txt_item_small_size"
+                android:text="主队"
+        />
+        
+        <TextView
+                style="@style/OrderTxt.Sub"
+                android:textSize="@dimen/txt_item_small_size"
+                
+                android:id="@+id/item_footguestname"
+                android:text="客队"
+        />
+        <com.chengyi.app.view.MeGridView
+                android:numColumns="2"
+                android:id="@+id/item_footchoose"
+                android:padding="0dp"
+                style="@style/OrderTxt.Sub"
+                android:textSize="@dimen/txt_item_small_size"
+                android:layout_weight="1.8"
+                android:gravity="clip_horizontal|center"
+                android:text="投注"
+                android:scrollbars="none"
+        
+        />
+        <com.chengyi.app.view.MeGridView
+                android:numColumns="2"
+                style="@style/OrderTxt.Sub"
+                android:textColor="@color/red"
+                android:padding="0dp"
+                android:textSize="@dimen/txt_item_small_size"
+                android:scrollbars="none"
+                android:id="@+id/item_result"
+              
+        />
+    
+    </LinearLayout>
+    <View style="@style/Line_Item"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              android:orientation="horizontal"
+                android:background="@color/main_bg_color"
+
+>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/main_bg_color"
+            android:gravity="center"
+            android:padding="@dimen/margin_m"
+            android:id="@+id/layouttopselect"
+    >
+
+        <TextView
+                android:id="@+id/btn1"
+                android:text="普通投注"
+                style="@style/PopN"/>
+        <TextView
+                android:id="@+id/btn2"
+                android:text="胆拖投注"
+                style="@style/PopN"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+>
+    <ImageView
+            android:id="@+id/imageView1"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/default_pop_bg"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/layouttopselect"
+                android:background="@color/main_bg_color"
+        >
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:id="@+id/wanbtn1"
+
+                        android:text="全部"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn2"
+
+                        android:text="@string/shuangseqiu"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn3"
+
+                        android:text="@string/fucai3d"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn4"
+
+                        android:text="@string/qilecai"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:id="@+id/wanbtn5"
+
+                        android:text="@string/fucai15xuan5"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn6"
+
+                        android:text="@string/chaojidaletou"
+                        style="@style/Pop3"/>
+
+                <TextView
+                        android:id="@+id/wanbtn7"
+
+                        android:text="@string/pailie35"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn8"
+
+                        android:text="@string/qixingcai"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:id="@+id/wanbtn9"
+
+                        android:text="@string/ticai6jia1"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn10"
+
+                        android:text="@string/ticai20xuan5"
+                      style="@style/Pop3"/>
+
+                <TextView
+                        android:id="@+id/wanbtn11"
+
+                        android:text="@string/jingcaizuqiu"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn12"
+
+                        android:text="@string/laoshishicai"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:id="@+id/wanbtn13"
+
+                        android:text="@string/xinshishicai"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn14"
+
+                        android:text="@string/lao11xuan5"
+                        style="@style/Pop3"/>
+
+                <TextView
+                        android:id="@+id/wanbtn15"
+                        style="@style/Pop3"
+                        android:text="@string/xin11xuan5"
+                       />
+                <TextView
+                        android:id="@+id/wanbtn16"
+
+                        android:text="@string/kuaile10fen"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            >
+                <TextView
+                        android:id="@+id/wanbtn17"
+                        style="@style/Pop3"
+                        android:text="@string/xinkuai3"
+                       />
+                <TextView
+                        android:id="@+id/wanbtn18"
+
+                        android:text="@string/bjdc"
+                        style="@style/Pop3"/>
+
+                <TextView
+                        android:id="@+id/wanbtn19"
+
+                        android:text="@string/shengfu14chang"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn20"
+
+                        android:text="@string/renxuan9chang"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                        android:id="@+id/wanbtn21"
+                        style="@style/Pop3"
+                        android:text="@string/xinyunsaiche"
+                        />
+                <TextView
+                        android:id="@+id/wanbtn22"
+
+
+                        android:text="@string/siz_chang"
+                        style="@style/Pop3"/>
+
+                <TextView
+                        android:id="@+id/wanbtn23"
+                        android:text="@string/for_chang"
+                        style="@style/Pop3"/>
+                <TextView
+                        android:id="@+id/wanbtn24"
+                        android:visibility="invisible"
+
+                        android:text="任选9场"
+                        style="@style/Pop3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

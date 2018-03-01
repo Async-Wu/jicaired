@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="40dp" android:layout_height="46dp"
+			  android:paddingTop="2dp"
+			  android:paddingBottom="2dp"
+	android:gravity="center">
+	<com.chengyi.app.view.widget.TouzhuButton
+		android:id="@+id/btn"
+		android:layout_gravity="center" android:gravity="center"
+		android:layout_width="40dp"
+		android:padding="0dp"
+		android:layout_height="40dp"
+		android:textColor="@color/qianqubtnselector" />
+</LinearLayout>
+ 

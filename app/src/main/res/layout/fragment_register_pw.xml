@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_setpw_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height" >
+
+        <TextView
+            android:id="@+id/zhucetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/register_pw_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <ImageView
+            android:id="@+id/imageViewclose"
+            android:layout_width="@dimen/actionbar_button_min_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+
+            android:scaleType="center"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginLeft="@dimen/gap_ml"
+        android:layout_marginRight="@dimen/gap_ml"
+        android:layout_marginTop="@dimen/gap_m"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.chengyi.app.view.ClearEditText
+            android:id="@+id/mima"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^*()_+"
+            android:drawablePadding="@dimen/gap_s"
+            android:drawableRight="@drawable/new_edite_delete"
+            android:hint="@string/register_pw_set"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/text_size_m" />
+
+        <Button
+            android:id="@+id/querenbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gap_ml"
+            android:text="@string/btn_ok"
+            android:textSize="@dimen/text_size_m"
+            android:paddingTop="@dimen/gap_ms"
+            android:paddingBottom="@dimen/gap_ms"/>
+    </LinearLayout>
+
+</RelativeLayout>

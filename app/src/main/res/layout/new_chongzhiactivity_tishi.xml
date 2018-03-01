@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="4dp"
+        android:background="@color/white"
+        android:id="@+id/chonglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/youhui" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:text="充值优惠劵" />
+
+           <LinearLayout
+               android:id="@+id/yuanjialayout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textView1"
+               android:layout_below="@+id/textView1"
+               android:layout_marginTop="8dp"
+               android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/gray"
+                android:text="原价:" />
+            <TextView
+                android:id="@+id/yuanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="1dp"
+                android:textColor="@color/gray"
+                android:text="10000元" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/yuanjialayout"
+            android:layout_alignTop="@+id/yuanjialayout"
+            android:layout_alignBottom="@+id/yuanjialayout"
+            android:text="现价:"
+            android:gravity="center_vertical"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="2dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/xianText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_toRightOf="@+id/TextView02"
+            android:layout_centerVertical="true"
+            android:text="9000元"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/yellow"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xianText"
+            android:layout_alignTop="@+id/TextView02"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/xianText"
+            android:gravity="center_vertical"
+            android:text="立省:"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+         <TextView
+             android:id="@+id/shengText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/xianText"
+             android:layout_alignTop="@+id/textView12"
+             android:layout_marginLeft="2dp"
+             android:layout_toRightOf="@+id/textView12"
+             android:gravity="center_vertical"
+             android:text="1000元"
+             android:textColor="@color/black"
+             android:textSize="13sp" />
+        
+</RelativeLayout>

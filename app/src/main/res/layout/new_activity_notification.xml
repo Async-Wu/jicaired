@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 提醒购彩时间和通知开奖结果 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/shezhitime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_btn_modifypw_states"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="投注截止前" />
+
+                <TextView
+                    android:id="@+id/tixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="2小时提醒"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+ 
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox1"
+                    android:layout_alignTop="@+id/checkbox1"
+                    android:text="双色球" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox2"
+                    android:layout_alignTop="@+id/checkbox2"
+                    android:text="福彩3D" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox3"
+                    android:layout_alignTop="@+id/checkbox3"
+                    android:text="七乐彩" />
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+ 
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox4"
+                    android:layout_alignTop="@+id/checkbox4"
+                    android:text="15选5" />
+
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+     
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox5"
+                    android:layout_alignTop="@+id/checkbox5"
+                    android:text="大乐透" />
+
+                <CheckBox
+                    android:id="@+id/checkbox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox6"
+                    android:layout_alignTop="@+id/checkbox6"
+                    android:text="排列3/5" />
+
+                <CheckBox
+                    android:id="@+id/checkbox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox7"
+                    android:layout_alignTop="@+id/checkbox7"
+                    android:text="七星彩" />
+
+                <CheckBox
+                    android:id="@+id/checkbox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox8"
+                    android:layout_alignTop="@+id/checkbox8"
+                    android:text="体彩6+1" />
+
+                <CheckBox
+                    android:id="@+id/checkbox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+   
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/normal_left_tv_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/checkbox9"
+                    android:layout_alignTop="@+id/checkbox9"
+                    android:text="体彩20选5" />
+
+                <CheckBox
+                    android:id="@+id/checkbox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/new_checkoff"
+                    android:button="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

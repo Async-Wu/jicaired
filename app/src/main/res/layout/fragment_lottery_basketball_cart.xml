@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:orientation="vertical">
+
+    <include layout="@layout/title_actionbar"
+            >
+    </include>
+
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_marginBottom="@dimen/margin_m"
+                android:gravity="center">
+
+          <include layout="@layout/item_add"/>
+        </LinearLayout>
+
+
+
+        <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_double_doule"
+                android:layout_marginRight="@dimen/margin_double_doule"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0px"
+                android:scrollbars="none"
+                android:fastScrollEnabled="true"
+                android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+
+    <include
+            layout="@layout/fragment_lottery_football_cart_bottom"/>
+</LinearLayout>

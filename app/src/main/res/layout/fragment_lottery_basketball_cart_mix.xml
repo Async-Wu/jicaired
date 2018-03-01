@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <Button
+            android:id="@+id/basket_danbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_xs"
+
+            android:paddingLeft="@dimen/gap_s"
+            android:paddingRight="@dimen/gap_s"
+            android:visibility="gone"
+            android:text="胆"
+            android:textColor="@color/selector_text_blue_white"
+            android:textSize="@dimen/text_size_sxs" />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="vertical"
+        >
+
+            <TextView
+
+                    android:id="@+id/basket_textview_league"
+                    android:text="欧冠"
+                    style="@style/ItemName"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/bisailayout"
+                style="@style/ItemLLTitlle">
+
+            <TextView
+                    android:id="@+id/basket_textview_visit"
+                    style="@style/ItemTitlte"
+                    android:text="大阪樱花"
+            />
+
+            <TextView
+                    android:id="@+id/rangqiu"
+                    style="@style/ItemTitlte_Sub"
+                    android:text="VS"
+            />
+
+            <TextView
+                    android:id="@+id/basket_textview_host"
+                    android:text="大阪樱花"
+                    style="@style/ItemTitlte"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_s"
+            android:layout_marginTop="@dimen/gap_s"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/gap_xxs"
+            android:paddingRight="@dimen/gap_xxs">
+
+        <LinearLayout
+                android:id="@+id/leftlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/margin_m"
+                android:orientation="vertical"
+        >
+
+
+            <TextView
+                    android:id="@+id/basket_textview_code"
+                    android:text="111"
+                    style="@style/ItemSubTitlt"
+            />
+
+            <TextView
+                    android:id="@+id/basket_textview_time"
+                    android:text="00:45开赛"
+                    style="@style/ItemSubTitlt"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/basket_layout_visit"
+                android:layout_width="0dp"
+                android:paddingLeft="14dp"
+                android:layout_marginLeft="@dimen/margin_m"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content">
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:background="@color/yellow"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="胜负"/>
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:background="#5197F8"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="让分"/>
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:background="#F77051"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="大小"/>
+                    <View style="@style/Line_Item"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            style="@style/ItemSecond.Third"
+                            android:id="@+id/basket_textview_visit_sp"
+                            android:text="主负 100.47"
+                    />
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            style="@style/ItemSecond.Third"
+                            android:id="@+id/basket_textview_visit_rf"
+
+                            android:text="主负 100.47"
+
+                    />
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/basket_textview_visit_bs"
+                            android:text="大分 100.47"
+                            style="@style/ItemSecond.Third"/>
+                    <View style="@style/Line_Item"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent">
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/shengfuzhu"
+                            android:textSize="10sp"
+
+                            android:textColor="@color/red"
+                            android:gravity="center"
+                            android:text="-"
+                            android:background="@color/football_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/rangfenzhu"
+                            android:textSize="10sp"
+                            android:textColor="@color/red"
+                            android:gravity="center"
+                            android:text="主0"
+                            android:background="@color/football_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/zongfen"
+                            android:textSize="10sp"
+                            android:background="@color/football_bg"
+                            android:textColor="@color/red"
+                            android:gravity="center"
+                            android:text="主0"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                    <View style="@style/Line_Item"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View style="@style/Line_V_Item"/>
+
+        <LinearLayout
+                android:id="@+id/basket_layout_host"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <View style="@style/Line_Item"/>
+                    <TextView
+
+                            android:id="@+id/basket_textview_host_sp"
+
+                            android:text="主胜 100.47"
+                            style="@style/ItemSecond.Third"/>
+                    <View style="@style/Line_Item"/>
+                    <TextView
+
+                            android:id="@+id/basket_textview_host_rf"
+
+                            android:text="主胜 100.47"
+                            style="@style/ItemSecond.Third"
+                    />
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/basket_textview_host_bs"
+
+                            android:text="小分 100.47"
+                            style="@style/ItemSecond.Third"/>
+                    <View style="@style/Line_Item"/>
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+                        android:id="@+id/basket_sfc_layout_team"
+                        android:background="@drawable/select_no_line"
+
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent">
+                    <View style="@style/Line_Item"/>
+                    <TextView
+                            android:id="@+id/mix_right"
+                            android:layout_gravity="center"
+                            android:textColor="@color/football_dark_txt"
+                            android:text="@string/sfc"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"/>
+                    <View style="@style/Line_Item"/>
+
+
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_delete"
+                   style="@style/Delete"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

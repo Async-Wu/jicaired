@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:background="@drawable/select_no_line"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <View style="@style/Line_Item"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/numtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pop_item_size"
+                    android:textColor="@color/football_txt"
+                    android:text="111"/>
+            <TextView
+                    android:id="@+id/peilv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pop_txt_small"
+                    android:textColor="@color/football_light_txt"
+                    android:text=""/>
+        </LinearLayout>
+        <View style="@style/Line_V_Item"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+        <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方案详情"
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/select_line"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+                android:id="@+id/jiezhiTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="5dp"
+                android:background="@drawable/detail_titlebgright"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textsize_normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/hemaiyongjin"
+            >
+
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盈利佣金:"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+                android:id="@+id/yongjinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+        <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起时间:"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+                android:id="@+id/touzhushijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="10%"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方案编号:"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+                android:id="@+id/fanganbianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方案描述:"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/textsize_normal"/>
+
+        <TextView
+                android:id="@+id/fanganmiaosu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal"/>
+    </LinearLayout>
+</LinearLayout>

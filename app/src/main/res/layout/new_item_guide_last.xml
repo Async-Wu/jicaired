@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+ />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/imageView2"
+        android:id="@+id/tiyanlayout"
+        >
+
+        <Button
+            android:id="@+id/tiyanbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/new_btn_tiyan"
+        />
+        
+    </RelativeLayout>
+    <!-- <ImageView
+        android:id="@+id/imageViewbg"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tiyanlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/guide_3_1" /> -->
+   
+</RelativeLayout>

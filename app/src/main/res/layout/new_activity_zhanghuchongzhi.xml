@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_back"/>
+    <View
+        android:background="@color/default_football_tabbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额 :"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:textSize="14sp"
+            android:hint="请输入金额，至少充值2"
+            android:inputType="number"
+            android:id="@+id/first_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:text="元"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/default_football_tabbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin"/>
+    <ListView
+        android:id="@+id/lv_pay"
+        style="@style/list_nodivide"></ListView
+        >
+    <TextView
+        android:gravity="center"
+        android:text="注：如遇充值困难，请拨打客服路线"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+
+
+
+</LinearLayout>

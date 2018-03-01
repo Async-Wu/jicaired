@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/main_bg_color"
+              android:gravity="center_vertical">
+
+
+    <LinearLayout
+            android:id="@+id/layouttopselect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/gap_l">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/wanfa"
+                        android:text="过关"
+                        style="@style/pop_ball_title"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:id="@+id/v_wanfa"
+                        android:layout_height="@dimen/line"
+                        android:background="@color/red"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/football_pop_news_btn"
+                        style="@style/pop_ball_title"
+                        android:text="单关"
+                        android:textColor="@color/football_grey"
+                        android:background="@color/transparent"/>
+
+                <View
+                        android:layout_width="match_parent"
+
+                        android:visibility="invisible"
+                        android:id="@+id/v_dang"
+                        android:layout_height="@dimen/line"
+                        android:background="@color/red"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gap_s"
+                android:paddingRight="@dimen/gap_s"
+                android:paddingTop="@dimen/gap_ml">
+
+            <TextView
+                    android:id="@+id/buttonspf"
+                    android:text="胜平负"
+                    style="@style/pop_ball"/>
+
+
+
+
+
+            <TextView
+                    android:id="@+id/buttonrqspf"
+
+                    android:text="让球胜平负"
+                    style="@style/pop_ball"
+            />
+            <TextView
+                    android:id="@+id/btn7"
+                    android:text="混合过关"
+                    style="@style/pop_ball"/>
+            <TextView
+                    android:id="@+id/btnhunhe"
+                    style="@style/pop_ball"
+                    android:visibility="gone"
+                    android:text="胜负球/让球"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gap_s"
+                android:paddingRight="@dimen/gap_s">
+
+            <TextView
+                    android:id="@+id/btn5"
+
+                    android:text="半全场"
+                    style="@style/pop_ball"/>
+
+            <TextView
+                    android:id="@+id/btn6"
+                    android:text="比分"
+                    style="@style/pop_ball"/>
+
+            <TextView
+                    android:id="@+id/buttonzjq"
+                    android:text="总进球"
+                    style="@style/pop_ball"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_s"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/gap_s"
+                android:visibility="gone"
+                android:paddingRight="@dimen/gap_s">
+
+            <TextView
+
+                    android:text="混合过关"
+                    android:visibility="gone"
+                    style="@style/pop_ball"/>
+
+            <TextView
+
+                    android:visibility="invisible"
+                    android:text="比分"
+                    style="@style/pop_ball"/>
+
+            <TextView
+                    android:visibility="invisible"
+                    android:text="总进球"
+                    style="@style/pop_ball"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

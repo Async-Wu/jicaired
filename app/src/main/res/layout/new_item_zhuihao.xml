@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_zjmx_list_bg_states"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.5"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+	            android:id="@+id/qishu"
+	            android:layout_width="105dp"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:textSize="14sp"
+	            android:textColor="@color/black"
+	            android:text="" />
+
+            <TextView
+                android:id="@+id/beishu"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+	            android:textColor="@color/black"
+	            android:layout_marginLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/totalmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kaijianghaomaLayout"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/kjtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/gray"
+                android:text="开奖号码:" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/red"
+                android:layout_marginLeft="2dp"
+                android:text="" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/detail_tableline" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/next" />
+        <RelativeLayout 
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_toRightOf="@+id/imageView1"
+	           android:layout_toLeftOf="@+id/imageView2"
+	           android:layout_centerVertical="true"
+	        >
+	        <TextView
+	            android:id="@+id/textViewstatus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:textSize="14sp"
+	            android:textColor="@color/black"
+	            android:text="追号中" />
+	        <LinearLayout 
+	            android:id="@+id/zhongjianlayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	            android:layout_centerInParent="true"
+	            android:visibility="gone"
+	            >
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="14sp"
+	                android:textColor="@color/black"
+	                android:text="中奖金额" />
+	            <TextView
+	                android:id="@+id/zhongmoney"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="14sp"
+	                android:textColor="@color/ywcolor"
+	                android:gravity="center"
+	                android:text="元" />
+	            
+	        </LinearLayout>
+	    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

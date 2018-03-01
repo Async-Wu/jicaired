@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:background="@color/football_bg"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="vertical"
+        >
+
+            <TextView
+
+                    android:id="@+id/basket_textview_league"
+                    android:text="欧冠"
+                    style="@style/ItemName"/>
+        </LinearLayout>
+        <LinearLayout
+
+                style="@style/ItemLLTitlle">
+
+            <TextView
+                    android:id="@+id/basket_textview_visit"
+                    style="@style/ItemTitlte"
+                    android:text="大阪樱花"
+            />
+
+            <TextView
+                    android:id="@+id/rangqiu"
+                    style="@style/ItemTitlte_Sub"
+                    android:text="VS"
+            />
+
+            <TextView
+                    android:id="@+id/basket_textview_host"
+                    android:text="大阪樱花"
+                    style="@style/ItemTitlte"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/leftlayout"
+                style="@style/ItemLeft"
+        >
+
+
+            <TextView
+                    android:id="@+id/basket_textview_code"
+                    style="@style/ItemSubTitlt"
+                    android:text="001"
+            />
+
+            <TextView
+                    android:id="@+id/basket_textview_time"
+                    style="@style/ItemSubTitlt"
+                    android:text="00:45截止"
+            />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/touzhulayout"
+                android:layout_weight="7"
+                android:layout_marginRight="@dimen/margin_m"
+                android:orientation="vertical"
+                android:background="@color/transparent"
+                style="@style/Item">
+
+            <LinearLayout
+                    android:id="@+id/bisailayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+            </LinearLayout>
+
+
+            <TextView
+                    android:id="@+id/basket_sfc_choosed_textview"
+                    style="@style/Item"
+                    android:lines="1"
+                  android:ellipsize="middle"
+                    android:layout_width="match_parent"
+                    android:text="点击展开比分投注区"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View style="@style/Line_Item"
+          android:layout_marginTop="@dimen/margin_m"/>
+
+
+</LinearLayout>

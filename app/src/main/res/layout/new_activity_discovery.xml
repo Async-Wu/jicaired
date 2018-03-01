@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   >
+<!--
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/new_actionbar_default" >
+    </include>
+ -->
+<!--<FrameLayout
+    android:background="#FE2525"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <Button
+        android:layout_gravity="center_vertical"
+        android:id="@+id/discovery_back"
+        android:layout_width="10.5dp"
+        android:layout_height="19dp"
+        android:background="@drawable/title_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/title_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现"
+        android:textColor="@color/bg_white"
+        android:textSize="18dp"
+        android:layout_centerInParent="true"
+        />
+</FrameLayout>-->
+    <include layout="@layout/title_actionbar"
+     >
+    </include>
+
+
+    <ImageView
+        android:id="@+id/discovery_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_s"
+        android:paddingRight="@dimen/gap_s"
+        android:scaleType="fitCenter"
+        android:src="@drawable/football_banner"
+   />
+
+    <ListView
+        android:id="@+id/discovery_list"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ffootballtopbarLayout"
+        android:background="@color/football_bg"
+
+        android:dividerHeight="@dimen/list_view_divider_high_s"
+        android:overScrollFooter="@color/transparent"
+        android:footerDividersEnabled="false"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:id="@+id/fl">
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_home_top"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    >
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+
+        <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+    <include layout="@layout/item_msg"/>
+    <View style="@style/Line"/>
+</LinearLayout>

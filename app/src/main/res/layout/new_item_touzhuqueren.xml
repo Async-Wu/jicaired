@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/touzu_bg"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:paddingLeft="14dp"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout android:id="@+id/editlayout"
+                      android:layout_weight="1"
+                      android:padding="8dp"
+                      android:layout_width="0dp"
+                      android:addStatesFromChildren="true"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:orientation="vertical">
+            <TextView android:id="@+id/haoma"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/red"
+                      android:text="04 10 14 16 19 31 01"
+                      android:layout_marginBottom="2dp"
+                      android:textSize="@dimen/txt_group_size"/>
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_marginTop="3dp"
+                          android:layout_height="wrap_content">
+                <TextView android:id="@+id/wanfa" android:textColor="@color/gray"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="单式投注:"
+                          android:textSize="@dimen/txt_item_size"/>
+                <TextView android:id="@+id/count"
+                          android:textColor="@color/gray"
+                          android:textSize="@dimen/txt_item_size"
+                          android:layout_marginLeft="2dp"
+                          android:gravity="right"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="1注"
+                     />
+                <TextView android:id="@+id/money"
+                          android:textColor="@color/gray"
+                          android:layout_width="wrap_content"
+                          android:textSize="@dimen/txt_item_size"
+                          android:layout_height="wrap_content"
+                          android:text="2元"
+                  />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/img"
+                style="@style/RealNext"
+        
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+           
+               
+        />
+
+
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/delete"
+            style="@style/Delete"
+
+    />
+
+
+</LinearLayout>

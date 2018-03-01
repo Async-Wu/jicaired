@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_m"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln1"
+        android:layout_toLeftOf="@+id/danbtn"
+        tools:showIn="@layout/football_car_mix">
+    <TextView
+            android:id="@+id/duiwu1"
+            android:text="大阪樱"
+            style="@style/ItemTitlte"/>
+    <TextView
+            android:id="@+id/rangqiu"
+            style="@style/ItemTitlte_Sub"
+            android:text="vs"
+    />
+    <TextView
+            android:id="@+id/duiwu2"
+            android:text="大阪樱"
+            style="@style/ItemTitlte"/>
+    <Button
+            android:id="@+id/danbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+
+            android:paddingTop="@dimen/gap_xxs"
+            android:paddingBottom="@dimen/gap_xxs"
+            android:text="胆"
+            android:textColor="@color/selector_text_green_white"
+            android:textSize="@dimen/text_size_sxs"
+            android:visibility="gone"/>
+</LinearLayout>

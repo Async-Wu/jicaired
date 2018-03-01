@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingBottom="@dimen/gap_m"
+    android:paddingTop="@dimen/gap_m" >
+
+    <TextView
+        android:id="@+id/discovery_listview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_xl"
+        android:text="发现"
+        android:textColor="@color/black"
+        android:textSize="16dp" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="@dimen/gap_xl"
+        android:scaleType="centerInside"
+        android:src="@drawable/next" />
+
+</RelativeLayout>

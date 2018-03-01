@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/jingcaimainlayout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" >
+
+    <include layout="@layout/title_actionbar" >
+    </include>
+
+    <include
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/footballffootballtopbarLayout"
+            layout="@layout/new_activity_loading" >
+    </include>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/footballffootballtopbarLayout"
+            layout="@layout/new_activity_failed"
+            android:visibility="gone" >
+    </include>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/item_no_data"
+            android:visibility="gone" >
+    </include>
+
+    <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottomlayout"
+                android:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                    android:id="@+id/topjiangqi"
+                    android:paddingLeft="@dimen/margin_m"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                <TextView
+                        android:id="@+id/jiangqitextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:text=""
+                        android:textColor="@color/football_txt"
+                        android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                        android:id="@+id/jiangqihaoma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toLeftOf="@+id/touzhuqiudui"
+                        android:layout_toRightOf="@+id/jiangqitextview"
+                        android:text=""
+                        android:textColor="@color/football_txt"
+                        android:textSize="@dimen/text_size_xs" />
+
+                <TextView
+                        android:id="@+id/touzhuqiudui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:layout_toLeftOf="@+id/qiuduinum"
+                        android:text="投注:"
+                        android:textColor="@color/football_txt"
+                        android:textSize="@dimen/text_size_xs"
+                        android:visibility="gone" />
+
+                <TextView
+                        android:id="@+id/qiuduinum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toLeftOf="@+id/wanfabutton"
+                        android:text=""
+                        android:textColor="@color/football_txt"
+                        android:textSize="@dimen/text_size_xs"
+                        android:visibility="gone" />
+
+
+            </RelativeLayout>
+            <View style="@style/Line"
+                  android:layout_below="@id/topjiangqi"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/refreshlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/topjiangqi" >
+
+                <ListView
+                        android:id="@+id/fourgoal_listview"
+                        android:layout_width="fill_parent"
+                        android:dividerHeight="0dp"
+                        android:divider="@color/transparent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_fourball"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/football_bottom"/>
+
+</LinearLayout>

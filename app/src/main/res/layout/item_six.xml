@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/ll_left_1"
+                android:layout_weight="2"
+                android:orientation="vertical"
+        >
+
+            <TextView
+
+                    android:id="@+id/tv_matcher_name"
+                    android:text="欧冠"
+                    style="@style/ItemName"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/bisailayout"
+                style="@style/ItemLLTitlle">
+
+            <TextView
+                    android:id="@+id/tv_host"
+                    style="@style/ItemTitlte"
+                    tools:text="大阪樱花"
+
+            />
+
+            <TextView
+                    android:id="@+id/rangqiu"
+                    style="@style/ItemTitlte_Sub"
+                    android:text="VS"
+            />
+
+            <TextView
+                    android:text="大阪樱花"
+                    android:id="@+id/tv_gust"
+                    style="@style/ItemTitlte"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/ll_left"
+                    android:layout_weight="2"
+                    style="@style/ItemLeft">
+
+                <TextView
+
+                        android:text="111"
+                        android:visibility="gone"
+                        android:textColor="#7E001C"
+                        style="@style/ItemDanui"/>
+
+                <TextView
+                        style="@style/ItemDanui"
+                        android:id="@+id/tv_num"
+                        tools:text="2222"/>
+
+                <TextView
+                        style="@style/ItemDanui"
+                        android:id="@+id/tv_time"
+                        tools:text="1111"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:visibility="gone"
+                    style="@style/LineV"></LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_m"
+
+                    android:layout_weight="7"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/item_danui"
+                    android:gravity="center_horizontal"
+            >
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                    >
+                        <View style="@style/Line_Item"/>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    style="@style/ItemSecond"
+                                    android:text="半主胜"
+                                    android:id="@+id/tv_t1"
+                            />
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    style="@style/ItemSecond"
+                                    android:text="半主胜"
+                                    android:id="@+id/tv_t2"
+                            />
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    android:text="半主胜"
+                                    android:id="@+id/tv_t3"
+                                    style="@style/ItemSecond"/>
+                            <View style="@style/Line_V_Item"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <ImageView
+                            android:id="@+id/iv_delet_b"
+                            android:visibility="gone"
+                            style="@style/Delete"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                    >
+                        <View style="@style/Line_Item"/>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    style="@style/ItemSecond"
+                                    android:text="半主胜"
+
+                                    android:id="@+id/tv_t5"
+                            />
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    style="@style/ItemSecond"
+                                    android:text="半主胜"
+                                    android:id="@+id/tv_t6"
+                            />
+                            <View style="@style/Line_V_Item"/>
+                            <TextView
+                                    android:text="半主胜"
+                                    android:id="@+id/tv_t7"
+                                    style="@style/ItemSecond"/>
+                            <View style="@style/Line_V_Item"/>
+                        </LinearLayout>
+                        <View style="@style/Line_Item"/>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/iv_delet_q"
+                            style="@style/Delete"
+
+
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginTop="@dimen/margin_m"
+            android:id="@+id/v"
+            style="@style/Line_Item"/>
+</LinearLayout>

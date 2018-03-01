@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jingcaimainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title_back" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ffootballtopbarLayout"
+        layout="@layout/new_activity_loading" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ffootballtopbarLayout"
+        layout="@layout/new_activity_failed"
+        android:visibility="gone" >
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/bottomlayoutbuy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hmbottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/new_icon_sh" />
+
+            <TextView
+                android:id="@+id/goumai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买竞彩足球"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomlayoutbuy"
+            android:layout_alignParentTop="true" >
+
+            <com.chengyi.app.view.scoller.MyRefreshListView
+                android:id="@+id/expandableListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/item_no_data"
+                android:visibility="gone" >
+            </include>
+
+            <FrameLayout
+                android:id="@+id/topGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/riqibtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+
+                    android:text="日期选择"
+                    android:textColor="@color/yellow"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

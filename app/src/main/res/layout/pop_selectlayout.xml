@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+			  android:orientation="vertical"
+     >
+
+
+    <LinearLayout
+        android:id="@+id/layouttopselect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical" >
+
+		    <LinearLayout
+		        android:id="@+id/firstlayout"
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:gravity="center_vertical"
+		        android:layout_height="wrap_content" >
+
+		        <TextView
+		            android:id="@+id/button1"
+		          style="@style/Pop3"
+
+
+		            android:text="全部"
+		            />
+
+		        <TextView
+		            android:id="@+id/button2"
+		            android:text="提款"
+					style="@style/Pop3" />
+
+		        <TextView
+		            android:id="@+id/button3"
+					style="@style/Pop3"
+
+		            android:text="中奖" />
+
+		        <TextView
+		            android:id="@+id/button4"
+					style="@style/Pop3"
+		            android:text="充值" />
+
+		    </LinearLayout>
+		    <LinearLayout
+		        android:id="@+id/secondlayout"
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:gravity="center_vertical"
+		        android:layout_height="wrap_content" >
+
+		        <TextView
+		            android:id="@+id/button5"
+					style="@style/Pop3"
+		            android:text="提款"
+		            />
+
+		        <TextView
+
+					android:visibility="invisible"
+		            android:text="购彩"
+					style="@style/Pop3"/>
+
+		        <TextView
+						android:visibility="invisible"
+						style="@style/Pop3"
+		            android:text="中奖" />
+
+		        <TextView
+						android:visibility="invisible"
+						style="@style/Pop3"
+		            android:text="充值" />
+
+		    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

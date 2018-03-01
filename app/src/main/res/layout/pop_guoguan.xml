@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_t_bg"
+>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_weight="1">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <View style="@style/Line"
+                  android:layout_gravity="center_vertical"/>
+            <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/text_size_sxs"
+                    android:padding="@dimen/margin_half"
+                    android:clickable="false"
+                    android:background="@color/football_bg"
+                    android:text="自由过关"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/lscolor"/>
+        </FrameLayout>
+
+        <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:numColumns="4">
+        </GridView>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_half"
+                android:layout_height="wrap_content">
+            <View style="@style/Line"
+                  android:layout_gravity="center_vertical"/>
+            <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:padding="@dimen/margin_half"
+                    android:layout_gravity="center_horizontal"
+                    android:focusable="false"
+                    android:background="@color/football_bg"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/lscolor"
+                    android:textSize="@dimen/text_size_sxs"
+                    android:visibility="invisible"
+                    android:text="组合过关"/>
+        </FrameLayout>
+
+        <GridView
+                android:id="@+id/gridView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4">
+        </GridView>
+    </LinearLayout>
+
+    <View style="@style/Line"
+          android:layout_marginTop="@dimen/margin"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:text="@string/Cancel"
+
+                android:id="@+id/tv_cancle"
+                style="@style/BtnOk.Cancle"/>
+        <TextView
+                android:text="@string/Ensure"
+
+                android:id="@+id/tv_ok"
+                style="@style/BtnOk"/>
+    </LinearLayout>
+
+</LinearLayout>

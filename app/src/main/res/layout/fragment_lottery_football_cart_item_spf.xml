@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/parent"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/football_bg"
+              android:orientation="horizontal"
+              android:gravity="center">
+
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <include layout="@layout/item_foot_cart"/>
+
+        <LinearLayout
+                style="@style/Car">
+            <LinearLayout
+                    android:id="@+id/listview_spf_layout_win"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <View style="@style/Line_Item"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="horizontal">
+                        <View style="@style/Line_V_Item"/>
+                        <TextView
+                                android:id="@+id/btn1"
+                                style="@style/ItemSecond"
+                                android:text="胜 100.47"
+
+                        />
+                        <View style="@style/Line_V_Item"/>
+
+
+                        <TextView
+                                android:id="@+id/btn2"
+                                android:text="平 10.47"
+                                style="@style/ItemSecond"
+
+                        />
+                        <View style="@style/Line_V_Item"/>
+                        <TextView
+                                android:id="@+id/btn3"
+                                android:text="负 880.47"
+                                style="@style/ItemSecond"/>
+                        <View style="@style/Line_V_Item"/>
+
+                    </LinearLayout>
+                    <View style="@style/Line_Item"/>
+                </LinearLayout>
+
+                <ImageView style="@style/Delete"
+                           android:id="@+id/iv_delete"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

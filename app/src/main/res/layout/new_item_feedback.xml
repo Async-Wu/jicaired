@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/longedittextbg"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/textsize_normal"
+            android:textColor="@color/black"
+            android:text="问:"/>
+
+    <TextView
+            android:id="@+id/wenText"
+            android:layout_marginLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:textSize="@dimen/textsize_normal"
+            android:textColor="@color/black"
+            android:text="什么是彩票合买？什么是彩票合买？什么是彩票合买？什么是彩票合买？什么是彩票合买？"/>
+
+    <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wenText"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_marginTop="5dp"
+            android:text="答:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_normal"/>
+
+    <TextView
+            android:id="@+id/replyText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wenText"
+            android:layout_alignTop="@+id/TextView01"
+            android:layout_below="@+id/wenText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_normal"
+            android:text="彩票代购指的是由个人出资委托本站购买指定的彩票，由本站代理出票，兑奖和派奖。彩票代购无需您外出排队买彩票，不受自然因素困扰，既快捷方便，又高效安全。"/>
+
+    <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/replyText"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_normal"
+            android:text="2013-09-23"/>
+
+</RelativeLayout>

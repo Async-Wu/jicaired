@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:background="@drawable/new_zjmx_list_bg_states"
+                android:paddingTop="4dp"
+
+    >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:src="@drawable/next"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:id="@+id/issue"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:textColor="#8D8D8E"
+        android:textSize="16sp"
+        android:text="20130908078期" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/issue"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:text="2013-09-07" />
+
+    <LinearLayout
+        android:id="@+id/qiulayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/issue"
+        android:layout_alignRight="@+id/date"
+        android:layout_below="@+id/issue"
+        android:gravity="top"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/drawnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#8D8D8E"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingLeft="2dp"
+            android:paddingBottom="5dp"
+            android:text="07,11,15,21,26,31#06" />
+         <TextView
+            android:id="@+id/henumber"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingLeft="2dp"
+            android:paddingBottom="5dp"
+            android:text="和值:10" />
+       
+    </LinearLayout>
+</RelativeLayout>

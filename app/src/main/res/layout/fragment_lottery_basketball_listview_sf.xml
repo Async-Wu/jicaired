@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/football_bg"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="vertical"
+        >
+
+            <TextView
+
+                    android:id="@+id/basket_textview_league"
+                    android:text="欧冠"
+                    style="@style/ItemName"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/bisailayout"
+                style="@style/ItemLLTitlle">
+
+            <TextView
+                    android:id="@+id/basket_textview_visit"
+                    style="@style/ItemTitlte"
+                    android:text="大阪樱花"
+            />
+
+            <TextView
+                    android:id="@+id/rangqiu"
+                    style="@style/ItemTitlte_Sub"
+                    android:text="VS"
+            />
+
+            <TextView
+                    android:id="@+id/basket_textview_host"
+                    android:text="大阪樱花"
+                    style="@style/ItemTitlte"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:id="@+id/leftlayout"
+                style="@style/ItemLeft">
+
+
+            <TextView
+                    android:id="@+id/basket_textview_code"
+                    android:text="001"
+                    style="@style/ItemSubTitlt"/>
+            <TextView
+                    android:id="@+id/basket_textview_time"
+                    android:text="00:45截止"
+                    style="@style/ItemSubTitlt"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="7"
+                      android:layout_marginRight="@dimen/margin_m"
+                      android:orientation="vertical">
+            <View style="@style/Line_Item"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+
+                          android:layout_weight="1">
+                <View style="@style/Line_V_Item"/>
+                <TextView
+                        android:id="@+id/basket_textview_visit_sp"
+                        style="@style/ItemSecond"
+                        android:text="胜 100.47"
+
+                />
+                <View style="@style/Line_V_Item"
+                      android:id="@+id/v_ping"/>
+                <TextView
+                        android:id="@+id/bigsmall_total"
+                        android:layout_weight="0"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/red"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="平 10.47"
+                        style="@style/ItemSecond"
+
+                />
+                <View style="@style/Line_V_Item"/>
+
+                <TextView
+                        android:id="@+id/basket_textview_host_sp"
+                        android:text="平 10.47"
+                        style="@style/ItemSecond"
+
+                />
+                <View style="@style/Line_V_Item"/>
+            </LinearLayout>
+            <View style="@style/Line_Item"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_marginTop="@dimen/margin_m"
+            style="@style/Line_Item"/>
+
+</LinearLayout>

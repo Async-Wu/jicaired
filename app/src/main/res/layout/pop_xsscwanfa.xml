@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  新时时彩-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+				android:background="@color/main_bg_color"
+     >
+
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:paddingBottom="10dp"
+         android:paddingTop="5dp"
+         android:paddingRight="5dp"
+         android:paddingLeft="5dp"
+         android:background="@color/main_bg_color"
+         
+         android:id="@+id/layouttopselect"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_normal"
+			android:layout_marginLeft="4dp"
+            android:textColor="@color/gray"
+            android:text="@string/puts" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            >
+             <TextView
+                    android:id="@+id/btn1"
+					android:text="一星"
+					style="@style/PopX"/>
+              <TextView
+                    android:id="@+id/btn2"
+
+		            android:text="四星"
+					style="@style/PopX" />
+               <TextView
+		            android:id="@+id/btn3"
+
+		            android:text="五星"
+					style="@style/PopX" />
+                <TextView
+		            android:id="@+id/btn4"
+
+		            android:text="五星通选"
+					style="@style/PopX"  />
+        </LinearLayout>
+        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="2dp"
+		            >
+		             <TextView
+		                    android:id="@+id/btn5"
+							style="@style/PopX"
+							android:text="二星组选"
+				           />
+		              <TextView
+		                    android:id="@+id/btn6"
+
+				            android:text="三星组3"
+							style="@style/PopX"  />
+		               <TextView
+				            android:id="@+id/btn7"
+
+				            android:text="三星组6"
+							style="@style/PopX" />
+			<TextView
+					android:id="@+id/btn8"
+
+					android:text="任选1"
+					style="@style/PopX" />
+
+		 </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            >
+
+              <TextView
+                    android:id="@+id/btn9"
+
+		            android:text="任选2"
+					style="@style/PopX" />
+               <TextView
+		            android:id="@+id/btn10"
+
+		            android:text="大小单双"
+					style="@style/PopX" />
+			<TextView
+					android:id="@+id/btn11"
+
+					android:text="二星直选"
+					style="@style/PopX"  />
+			<TextView
+					android:id="@+id/btn12"
+
+					android:text="三星直选"
+					style="@style/PopX"  />
+                
+        </LinearLayout>
+
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_normal"
+			android:layout_marginLeft="4dp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="2dp"
+            android:text="@string/djto" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            >
+             <TextView
+                    android:id="@+id/btn13"
+
+		            android:text="三星直选"
+					style="@style/PopX"  />
+              <TextView
+                    android:id="@+id/btn14"
+
+		            android:text="二星组选"
+					style="@style/PopX"  />
+			<TextView
+					style="@style/Pop3"
+					android:visibility="invisible"/> <TextView
+				style="@style/Pop3"
+				android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

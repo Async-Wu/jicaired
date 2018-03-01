@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/login_main_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/football_bg"
+              android:orientation="vertical">
+
+
+    <include
+            layout="@layout/title_back"
+
+    />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/gap_ml"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/gap_ml"
+            android:layout_marginTop="@dimen/gap_m"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="3dp"
+                android:orientation="vertical">
+
+            <com.chengyi.app.view.ClearEditText
+                    style="@style/Pwd"
+                    android:id="@+id/username"
+                    android:background="@color/football_bg"
+                    android:drawableLeft="@drawable/val"
+                    android:hint="@string/nickname"
+            />
+
+
+            <View
+                    style="@style/Line_Item"/>
+
+            <com.chengyi.app.view.ClearEditText
+                    android:id="@+id/password"
+                    style="@style/Pwd"
+                    android:background="@color/football_bg"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/passwordbg"
+                    android:hint="@string/login_password_hint"
+            />
+
+            <View
+                    style="@style/Line_Item"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:layout_weight="1">
+
+                    <CheckBox
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/cb_login"
+android:layout_gravity="center"
+                            android:button="@null"
+                            android:background="@drawable/ck"
+
+                    />
+
+
+
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+android:layout_marginLeft="@dimen/margin_half"
+                        android:textColor="@color/gray"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zidongdenglu"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                    android:id="@+id/forgetpasswordtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+
+                    android:paddingRight="@dimen/gap_s"
+                    android:text="@string/login_pw_forget"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_s"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/loginbtn"
+                android:text="@string/login_btn"
+                style="@style/btn"/>
+
+        <Button
+                android:id="@+id/login_register"
+                android:text="注册"
+                style="@style/reg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

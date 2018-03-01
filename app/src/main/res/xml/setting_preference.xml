@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<PreferenceCategory android:title="设置">
+
+		<PreferenceScreen android:title="用户反馈">
+			<intent android:targetPackage="com.wenwen.mhz"
+				android:targetClass="com.wenwen.mhz.activity.other.Activity_Fankui" />
+		</PreferenceScreen>
+		<PreferenceScreen android:title="关于">
+			<intent android:targetPackage="com.wenwen.mhz"
+				android:targetClass="com.wenwen.mhz.activity.other.Activity_Guanyu" />
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="升级">
+		<PreferenceScreen android:title="检测升级">
+			<intent android:targetPackage="com.wenwen.mhz"
+				android:targetClass="com.wenwen.mhz.activity.other.Activity_Shengji" />
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

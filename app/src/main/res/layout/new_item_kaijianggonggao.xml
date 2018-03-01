@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+     >
+
+       <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/livebg" 
+        />
+
+        <TextView
+            android:id="@+id/issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="072期:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_normal" 
+            />
+
+        <TextView
+            android:id="@+id/drawnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="01 06 07 09 10 25 26 22"
+            android:textColor="@color/myred"
+            android:textSize="@dimen/textsize_normal" />
+</LinearLayout>

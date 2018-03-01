@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/zhifubaolayoutview"
+            android:background="@drawable/new_zjmx_list_bg_states"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/zhifubao_icon1"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageView11"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+            >
+
+                <TextView
+                        android:id="@+id/textViewcz1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="支付宝"/>
+
+                <ImageView
+                        android:id="@+id/tuijian1"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tuijian"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/textViewcz2"
+                    android:layout_marginTop="5dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textsize_normal"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全、快捷、免手续费"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

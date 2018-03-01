@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/jingcaimainlayout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_actionbar">
+    </include>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ffootballtopbarLayout"
+            android:visibility="gone"
+            layout="@layout/new_activity_loading">
+    </include>
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ffootballtopbarLayout"
+            layout="@layout/new_activity_failed"
+            android:visibility="gone">
+    </include>
+
+    <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+
+    >
+
+        <include layout="@layout/football_bottom"/>
+
+        <View style="@style/Line"
+              android:id="@+id/line"
+              android:background="@color/football_grey"
+              android:layout_above="@id/bottomlayout"/>
+
+        <com.chengyi.app.view.scoller.MyExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:layout_above="@+id/line">
+        </com.chengyi.app.view.scoller.MyExpandableListView>
+
+        <FrameLayout
+                android:id="@+id/topGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        </FrameLayout>
+
+        <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/bottomlayout"
+                layout="@layout/item_no_data"
+                android:visibility="gone">
+        </include>
+
+        <RelativeLayout
+                android:id="@+id/wanfaandxuanshailayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+            <Button
+                    android:id="@+id/wanfabtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/new_btn_jingcai_wanfa"/>
+
+            <Button
+                    android:id="@+id/shuaixuanBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/wanfabtn"
+                    android:background="@drawable/new_shaixuan_btn_states"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

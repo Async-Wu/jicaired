@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+>
+    <include layout="@layout/title_back"/>
+    <ListView
+            android:id="@+id/discovery_list"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ffootballtopbarLayout"
+            android:divider="@color/football_grey"
+            android:dividerHeight="@dimen/line"
+            android:overScrollFooter="@color/transparent"
+            android:footerDividersEnabled="false"/>
+    <View
+            style="@style/Line_Item"
+    />
+
+</LinearLayout>

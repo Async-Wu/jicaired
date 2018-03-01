@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+>
+    <include layout="@layout/title_back"/>
+    <include layout="@layout/new_activity_failed"
+             android:visibility="gone"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"></include>
+
+
+ <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     <android.support.v4.widget.SwipeRefreshLayout
+             android:layout_width="match_parent"
+             android:id="@+id/srf_get"
+             android:layout_height="wrap_content">
+
+         <ListView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:id="@+id/refreshListViewtt"
+                 android:background="@color/white"
+                 android:scrollbars="none"
+                 android:divider="@color/football_bg"
+
+                 android:dividerHeight="@dimen/list_view_divider_high_s"
+                 android:listSelector="@android:color/transparent"/>
+     </android.support.v4.widget.SwipeRefreshLayout>
+     <include layout="@layout/new_activity_loading"/>
+
+ </FrameLayout>
+</LinearLayout>

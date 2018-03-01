@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center"
+              android:padding="0dp"
+              android:orientation="vertical">
+    <View style="@style/Line"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+             android:layout_marginLeft="@dimen/margin_m"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/datetextview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:text="今日周三"
+                android:textColor="@color/lscolor"
+                android:textSize="@dimen/txt_group_size"/>
+
+        <TextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="34场比赛"
+                android:textColor="@color/lscolor"
+                android:textSize="@dimen/txt_group_size"/>
+
+    </LinearLayout>
+    <View style="@style/Line"
+    />
+</LinearLayout>

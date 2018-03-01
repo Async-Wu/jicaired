@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/red"
+              android:gravity="center"
+                android:clickable="true"
+>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_back"
+            android:paddingLeft="@dimen/margin"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_height="@dimen/title_height">
+
+        <ImageView
+                android:id="@+id/title_back_left"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:background="@drawable/title_back"
+                android:layout_centerVertical="true"
+
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消  "
+                android:textSize="16sp"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:paddingRight="24dp"
+            android:id="@+id/footballffootballtopbarLayout"
+            android:gravity="center"
+    >
+
+        <TextView
+                android:id="@+id/tv_title"
+                style="@style/RealTitle"/>
+        <ImageView style="@style/title_xiala"
+                   android:id="@+id/iv_anim"
+                   android:rotation="180"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:id="@+id/ll_menu"
+            android:layout_alignParentRight="true">
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_select"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/loudou"/>
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_wanfa"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/margin_half"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/i"/>
+    </LinearLayout>
+
+</LinearLayout>

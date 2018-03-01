@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/football_bg"
+                android:focusable="false"
+              android:orientation="vertical"
+                android:focusableInTouchMode="false"
+       >
+
+    <!--
+         <Button
+        android:id="@+id/img_shanchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/options6_1"
+        android:visibility="invisible" />
+    -->
+
+    <include layout="@layout/item_foot_cart"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/Car"
+                  android:orientation="horizontal">
+        <LinearLayout
+                android:id="@+id/linearLayout01"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/spflayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/nrqlayout"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_xs"
+                        android:textColor="@color/football_txt"/>
+
+                <Button
+                        android:id="@+id/btn1"
+                        android:text="胜 100.47"
+                        style="@style/BtnCart"/>
+
+                <Button
+                        android:id="@+id/btn2"
+                        style="@style/BtnCart"
+                        android:text="平 100.47"
+                />
+
+                <Button
+                        android:id="@+id/btn3"
+                        style="@style/BtnCart"
+                        android:text="负 880.47"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/rqtext"
+                        android:layout_width="20dp"
+                        android:layout_height="fill_parent"
+
+                        android:textSize="@dimen/text_size_xs"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="+1"/>
+
+                <Button
+                        android:id="@+id/btn4"
+
+                        android:text="胜 100.47"
+                        style="@style/BtnCart"/>
+
+                <Button
+                        android:id="@+id/btn5"
+                        style="@style/BtnCart"
+                        android:text="平 100.47"
+                />
+
+                <Button
+                        android:id="@+id/btn6"
+
+                        android:text="负 880.47"
+                        style="@style/BtnCart"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+                android:id="@+id/iv_delete"
+                android:src="@drawable/icon_delete"
+                style="@style/Delete"/>
+    </LinearLayout>
+
+
+</LinearLayout>

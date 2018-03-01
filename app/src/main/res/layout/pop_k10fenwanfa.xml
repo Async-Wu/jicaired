@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 快乐十分 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg_color"
+>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/main_bg_color"
+            android:id="@+id/layouttopselect"
+    >
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/gray"
+                android:text="普通"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+        >
+            <TextView
+                    android:id="@+id/btn1"
+                    android:text="任选2"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn2"
+
+                    android:text="任选3"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn3"
+
+                    android:text="任选4"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn4"
+
+                    android:text="任选5"
+                    style="@style/Pop10"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+        >
+            <TextView
+                    android:id="@+id/btn5"
+
+                    android:text="连2组选"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn6"
+                    style="@style/Pop10"
+                    android:text="前3组选"
+            />
+            <TextView
+                    android:id="@+id/btn7"
+
+                    android:text="连2直选"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn8"
+
+                    android:text="前3直选"
+                    style="@style/Pop10"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+        >
+            <TextView
+                    android:id="@+id/btn9"
+
+                    android:text="前一"
+                    style="@style/Pop10"/>
+            <TextView
+                    style="@style/Pop3"
+                    android:visibility="invisible"/>
+            <TextView
+                    style="@style/Pop3"
+                    android:visibility="invisible"/>
+            <TextView
+                    style="@style/Pop3"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/gray"
+                android:layout_marginTop="2dp"
+                android:text="胆拖"/>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+        >
+            <TextView
+                    android:id="@+id/btn10"
+                    style="@style/Pop10"
+                    android:text="任选2"
+            />
+            <TextView
+                    android:id="@+id/btn11"
+
+                    android:text="任选3"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn12"
+
+                    android:text="任选4"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn13"
+
+                    android:text="任选5"
+                    style="@style/Pop10"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+        >
+            <TextView
+                    android:id="@+id/btn14"
+
+                    android:text="连2组选"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn15"
+
+                    android:text="前3组选"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn16"
+
+                    android:text="连2直选"
+                    style="@style/Pop10"/>
+            <TextView
+                    android:id="@+id/btn17"
+
+                    android:text="前3直选"
+                    style="@style/Pop10"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

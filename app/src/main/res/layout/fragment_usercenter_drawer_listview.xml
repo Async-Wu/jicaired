@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/list_view_padding"
+    android:paddingRight="@dimen/list_view_padding" >
+
+    <TextView
+        android:id="@+id/usercenter_list_lottery_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/list_view_padding"
+        android:text="双色球1234"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_sxs"
+        android:layout_gravity="center"
+        android:gravity="center|left" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/usercenter_list_lottery_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100000.00元"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xs" />
+
+        <TextView
+            android:id="@+id/usercenter_list_lottery_period_num"
+            android:layout_marginTop="@dimen/list_view_gap_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="140510006期"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/usercenter_list_lottery_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中100000000.00元"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xs" />
+
+        <TextView
+            android:id="@+id/usercenter_list_lottery_buy_time"
+            android:layout_marginTop="@dimen/list_view_gap_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-01-01 09:09"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_xs" />
+    </LinearLayout>
+
+</LinearLayout>

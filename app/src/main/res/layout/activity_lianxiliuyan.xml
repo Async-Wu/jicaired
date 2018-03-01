@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/title_back"/>
+    <EditText
+        android:layout_margin="6dp"
+        android:id="@+id/fankuiyijian_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:background="#c4f2f2f2"
+        android:hint="欢迎留言，我们竭诚为您服务!"
+        android:paddingLeft="12.0dip"
+        android:textColor="#ff1d1d1d"
+        android:maxLength="200"
+        android:textColorHint="#ff666666"
+        android:textSize="16.0sp"
+        android:gravity="top"
+        />
+    <Button
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:id="@+id/lianxi_send"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

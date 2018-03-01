@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/stroke"
+            android:background="#e8e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+    <LinearLayout
+            android:paddingTop="6dp"
+            android:background="@color/white"
+            android:paddingBottom="6dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                style="@style/OrderTxt"
+                android:id="@+id/item_footmatchcode"
+                android:text="场次"
+                android:layout_weight="0"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+        />
+        
+        <TextView
+                style="@style/OrderTxt"
+                android:id="@+id/item_foothostname"
+                android:text="主队"
+        />
+        
+        <TextView
+                style="@style/OrderTxt"
+                android:id="@+id/item_footguestname"
+                android:text="客队"
+        />
+        <TextView
+                style="@style/OrderTxt"
+                android:id="@+id/item_footchoose"
+                android:layout_weight="1.4"
+                android:text="投注"
+        />
+        <TextView
+                style="@style/OrderTxt"
+                android:id="@+id/item_result"
+                android:layout_weight="1.4"
+                android:text="@string/res"
+        />
+    
+    </LinearLayout>
+    <View style="@style/Line_Item"/>
+</LinearLayout>

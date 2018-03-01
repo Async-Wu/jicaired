@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+
+        layout="@layout/title_actionbar" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_loading" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_failed"
+        android:visibility="gone" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="您的积分:"
+                android:textColor="@color/qinghao"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/jifentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="20099分"
+                android:textColor="@color/jianghaoma"
+                android:textSize="@dimen/textsize_normal" />
+        </LinearLayout>
+
+        <com.chengyi.app.view.scoller.MyRefreshListView
+            android:id="@+id/refreshListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@android:color/transparent"
+            android:background="@color/football_bg"
+
+            android:dividerHeight="@dimen/list_view_divider_high_s"/>
+    </LinearLayout>
+
+</LinearLayout>

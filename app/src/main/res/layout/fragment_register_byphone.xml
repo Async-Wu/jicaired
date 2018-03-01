@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_by_phone_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:clickable="true" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height" >
+
+        <TextView
+            android:id="@+id/zhucetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/register_by_phone_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <ImageView
+            android:id="@+id/imageViewclose"
+            android:layout_width="@dimen/actionbar_button_min_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_btn_transparent"
+            android:scaleType="center"
+            android:src="@drawable/register_close" />
+    </RelativeLayout>
+ -->
+ <include android:id="@+id/toplayout" layout="@layout/title_actionbar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toplayout"
+        android:layout_marginLeft="@dimen/gap_ml"
+        android:layout_marginRight="@dimen/gap_ml"
+        android:layout_marginTop="@dimen/gap_m" >
+
+        <LinearLayout
+            android:id="@+id/_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.chengyi.app.view.ClearEditText
+                android:id="@+id/_zhanghao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/gap_s"
+                android:drawableRight="@drawable/new_edite_delete"
+                android:hint="@string/register_by_phone_hint"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="@dimen/text_size_m" />
+
+            <com.chengyi.app.view.ClearEditText
+                android:id="@+id/_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/gap_s"
+                android:drawableRight="@drawable/new_edite_delete"
+                android:hint="@string/register_by_phone_username_hint"
+                android:inputType="text"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="@dimen/text_size_m" />
+
+            <com.chengyi.app.view.ClearEditText
+                android:id="@+id/_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/gap_s"
+                android:drawableRight="@drawable/new_edite_delete"
+                android:hint="@string/register_by_phone_password_hint"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:textSize="@dimen/text_size_m" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/querenbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_register"
+            android:layout_marginTop="@dimen/gap_l"
+            android:paddingBottom="@dimen/gap_ms"
+            android:paddingTop="@dimen/gap_ms"
+            android:text="@string/register"
+            android:background="@color/red"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/register_by_phone_text_note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/querenbtn"
+            android:layout_marginTop="@dimen/gap_m"
+            android:visibility="gone"
+            android:clickable="true"
+            android:text="@string/register_by_phone_note1"
+            android:textColor="@color/grey_new"
+            android:textSize="@dimen/text_size_xs" />
+
+        <!--
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/querenbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/gap_s"
+        android:gravity="left">
+        -->
+
+
+        <!--
+             <CheckBox
+                android:id="@+id/register_by_phone_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="已满18周岁并同意"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_s" />
+        -->
+        <!--
+             <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:background="@drawable/xd_input_checkon" />
+        -->
+
+
+        <!--
+             <TextView
+            android:id="@+id/fuwutiaokuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/register_by_phone_note2"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textsize_normal" />
+        -->
+
+
+        <!-- </LinearLayout> -->
+
+    </RelativeLayout>
+    <!--
+         <Button
+        android:id="@+id/querenbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/new_queren_btn_states"
+        android:text="获取验证码"
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+    -->
+
+</RelativeLayout>

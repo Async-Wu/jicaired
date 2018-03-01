@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg_color"
+>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_m"
+            android:background="@color/main_bg_color"
+            android:id="@+id/layouttopselect"
+    >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+        >
+            <TextView
+                    android:id="@+id/btn1"
+                    android:text="三不同号"
+                    style="@style/Pop3"/>
+            <TextView
+                    android:id="@+id/btn2"
+
+                    android:text="二不同号"
+                    style="@style/Pop3"/>
+            <TextView
+                    android:id="@+id/btn3"
+
+                    android:text="和值"
+                    style="@style/Pop3"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        >
+            <TextView
+                    android:id="@+id/btn4"
+
+                    android:text="任意选号"
+                    style="@style/Pop3"/>
+            <TextView
+                    android:id="@+id/btn5"
+
+                    android:text="猜对子"
+                    style="@style/Pop3"/>
+            <TextView
+                    android:id="@+id/btn6"
+
+                    android:text="猜顺子"
+                    style="@style/Pop3"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/btn7"
+
+                    android:text="猜豹子"
+                    style="@style/Pop3"/>
+            <TextView
+                    style="@style/Pop3"
+                    android:visibility="invisible"/>
+            <TextView
+                    style="@style/Pop3"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

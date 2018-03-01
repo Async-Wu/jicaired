@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@drawable/radius_t_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+    <ScrollView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+    >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+        >
+
+            <LinearLayout
+                    android:id="@+id/bisailayout"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/margin_m"
+                    style="@style/ItemLLTitlle">
+
+                <TextView
+                        android:id="@+id/zhudui"
+                        style="@style/ItemTitlte"
+                        android:text="大阪樱花"
+                />
+
+                <TextView
+                        android:id="@+id/duizhen"
+                        style="@style/ItemTitlte_Sub"
+                        android:text="VS"
+                />
+
+                <TextView
+                        android:id="@+id/kedui"
+                        android:text="大阪樱花"
+                        style="@style/ItemTitlte"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/Wh">
+
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll1"
+                        android:layout_height="match_parent">
+
+
+                    <View style="@style/Line_V_Item"/>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_height="match_parent">
+                        <View style="@style/Line_Item"/>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/title1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txt_item_time"
+                                    android:background="@color/yellow"
+                                    android:paddingRight="1dp"
+                                    android:paddingLeft="1dp"
+                                    android:text="胜"/>
+                            <View style="@style/Line_V_Item"/>
+                        </LinearLayout>
+
+                        <View style="@style/Line_Item"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                >
+                    <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                    >
+
+                    </LinearLayout>
+                    <View style="@style/Line_Item" android:id="@+id/v1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    style="@style/Wh">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll2"
+                        android:layout_height="match_parent">
+
+
+                    <View style="@style/Line_V_Item"/>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:orientation="vertical"
+
+                                  android:layout_height="match_parent">
+                        <View style="@style/Line_Item"/>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="horizontal"
+
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/title2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingRight="1dp"
+                                    android:paddingLeft="1dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txt_item_time"
+                                    android:background="#F77C51"
+
+
+                                    android:text="平"/>
+                            <View style="@style/Line_V_Item"/>
+                        </LinearLayout>
+                        <View style="@style/Line_Item"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+                    <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                    </LinearLayout>
+                    <View style="@style/Line_Item"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    style="@style/Wh">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll3"
+                        android:layout_height="match_parent">
+
+
+                    <View style="@style/Line_V_Item"/>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_height="match_parent">
+                        <View style="@style/Line_Item"/>
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_height="match_parent">
+
+                            <TextView
+                                    android:id="@+id/title3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txt_item_time"
+                                    android:paddingRight="1dp"
+                                    android:paddingLeft="1dp"
+                                    android:background="#5184F7"
+                                    android:text="负"/>
+                            <View style="@style/Line_V_Item"/>
+                        </LinearLayout>
+
+                        <View style="@style/Line_Item"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                >
+                    <LinearLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                    >
+                    </LinearLayout>
+                    <View style="@style/Line_Item" android:id="@+id/v2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/bottomlayout"
+                    android:background="@drawable/zhuihaolayoubg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_height"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:focusable="false"
+            >
+                <Button
+                        android:id="@+id/cancel"
+                        style="@style/BtnOk.Cancle"
+                        android:text="取消"
+                />
+                <Button
+                        android:id="@+id/yesbtn"
+                        android:text="确定"
+                        style="@style/BtnOk"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

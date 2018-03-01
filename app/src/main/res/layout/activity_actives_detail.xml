@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.chengyi.app.home.actives.ActivesDetailActivity">
+
+    <include layout="@layout/title_back"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/lauch"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+                android:textColor="#d37c79"
+                android:text="活动时间:"
+                style="@style/tv_act"
+
+                />
+
+        <TextView
+                android:text="活动时间"
+                android:id="@+id/tv_time"
+                style="@style/tv_act"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+                android:textColor="#d37c79"
+                android:text="活动内容:"
+                style="@style/tv_act"
+
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_content_act"
+
+                android:layout_margin="16dp"
+                android:textColor="#414141"
+                android:text="活动内容:"
+                style="@style/tv_act"
+
+                />
+
+
+    </LinearLayout>
+</LinearLayout>

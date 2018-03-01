@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basket_selector_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_no_line"
+    android:gravity="center"
+    android:orientation="vertical"
+ >
+
+    <TextView
+        android:id="@+id/basket_selector_item_score_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-5"
+        android:textColor="@color/football_txt"
+        android:textSize="@dimen/txt_item_title_size" />
+
+    <TextView
+        android:id="@+id/basket_selector_item_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.5"
+        android:textColor="@color/football_light_txt"
+        android:textSize="@dimen/txt_item_size" />
+
+</LinearLayout>

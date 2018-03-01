@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:text="sunboy876" />
+     <LinearLayout
+            android:id="@+id/dengjiicons"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+     </LinearLayout>
+     <TextView
+        android:id="@+id/jine"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:text="3440" />
+     <TextView
+        android:id="@+id/gufen"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="5dp"
+        android:text="中奖2000" />
+</LinearLayout>

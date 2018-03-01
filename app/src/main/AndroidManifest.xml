@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.chengyi">
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true">
+    </supports-screens>
+
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+        <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+        <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+
+        <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+        <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="getui.permission.GetuiService.${applicationId}"/>
+    <application
+            android:name=".app.CaipiaoApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/lauch"
+            android:label="@string/app_name"
+           android:defaultToDeviceProtectedStorage="true"
+            android:configChanges="locale|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/App">
+        <activity android:name=".app.jingji.basket.BasketballSFCSelector"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/activityDialog"
+        />
+        <activity android:name=".app.jingji.basket.BasketballMixselector"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/activityDialog"/>
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${GETUI_APP_ID}"/>
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${GETUI_APP_KEY}"/>
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${GETUI_APP_SECRET}"/>
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.chengyi.app.push.DemoIntentService"/>
+        <service  android:name="com.chengyi.app.push.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"> </service>
+
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <activity    android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <service    android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+        <receiver
+            android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <provider    android:name="com.igexin.download.DownloadProvider"
+            android:exported="true"
+            android:authorities="downloads.${applicationId}"
+            android:process=":pushservice" />
+        <activity android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity android:name=".app.jingji.basket.BasketballCartSFC"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".app.jingji.basket.BasketballCartSF"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".app.jingji.basket.BasketBall"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".app.jingji.basket.BasketballmixCart"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".app.user.setting.Activity_lianxiliuyan"/>
+        <activity android:name=".app.user.info.FanganorderActivity"/>
+        <activity android:name=".app.user.setting.ScanimageActivity"/>
+        <activity android:name=".app.user.info.OrderliuyanActivity"/>
+        <activity android:name="com.jiyunxueyuanandroid.ShoumiMainActivity"/>
+        <activity android:name="com.jiyunxueyuanandroid.AlipayActivity"/>
+        <activity android:name=".app.jingji.bzjy.BjPreActivity"
+                  android:windowSoftInputMode="adjustResize"
+        />
+        <activity android:name=".app.jingji.bzjy.BzjyActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+        ></activity>
+        <activity
+                android:name=".app.num.lottery.Activity_Touzhuqueren"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+                android:name=".app.num.lottery.Activity_CaipiaoTouZhu"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".app.home.get.Activity_HistoryDrawNumber"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".app.home.get.Activity_DrawNumberDetail"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".app.user.login.LoginActivity"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.home.hemai.TogeterBuyActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.login.Activity_RegisterSuccess"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.info.Activity_Authentication"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.login.Login_FindPW"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_ZhangHuChongZhi"
+                android:configChanges="keyboardHidden|orientation"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_GouCaiRecord"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_ZiJinMingXi"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.info.Activity_UserMessage"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.setting.Activity_SetAccount"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_YinhangkaBangding"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.setting.Activity_ModifyPassWord"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.jingji.football.FootBall"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.jingji.football.FootBall_Previous_Record"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.setting.Activity_Setting"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.setting.Activity_Notification"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity
+                android:name=".app.user.setting.Activity_FeedBack"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+                android:name=".app.user.jifen.Activity_JiFenShangCheng"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_ChongZhiActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.info.Activity_LingHaoHistory"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.info.Activity_ShenfenBangding"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.user.money.Activity_ZiJinXiangQing"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.jingji.football.FootBallAdapter_mix_halfwhole_bifen_Selector"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/activityDialog">
+        </activity>
+        <activity android:name=".app.jingji.football.FootballCart"
+
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+        />
+        <activity
+                android:name=".app.jingji.renxuan.Activity_RenXuanQiuChang"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".app.jingji.renxuan.Activity_RenXuanQiuChang_EnSure"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+        </activity>
+        <activity
+                android:name=".app.jingji.guanyajun.GuanYaJun"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+        </activity>
+        <activity
+                android:name=".app.jingji.guanyajun.GuanYaJunCart"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+        </activity>
+        <!-- 注册所用 -->
+
+        <activity
+                android:name=".app.user.login.Register_VerifyCode"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustUnspecified|stateVisible">
+        </activity>
+        <activity
+                android:name=".app.home.home.HomeActivity"
+                android:windowSoftInputMode="adjustUnspecified">
+        </activity>
+        <activity android:name=".app.user.login.RegeditActivity">
+        </activity>
+        <activity android:name=".app.start.Activitys" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.user.money.ZhuiActivity">
+        </activity>
+        <activity android:name=".app.web.WebViewActivity">
+        </activity>
+        <activity android:name=".app.jingji.six.SixActivity">
+        </activity>
+        <activity android:name=".app.jingji.six.SixCartActivity"
+
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  >
+        </activity>
+        <activity
+                android:name=".app.follow.FollowMeActivity"
+                android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
+                android:name=".app.jingji.fourgoal.Activity_fourgoalnext"
+                android:configChanges="keyboardHidden|orientation"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize"
+               />
+        <activity
+                android:name=".app.jingji.fourgoal.Activity_fourgoal"
+                android:configChanges="orientation|screenSize"/>
+        <activity android:name=".app.home.discover.DiscoverActivity">
+        </activity>
+        <activity android:name=".app.home.actives.ActivesActivity">
+        </activity>
+        <activity android:name=".app.home.actives.ActivesDetailActivity">
+        </activity>
+        <activity android:name=".app.jingji.football.MixSubActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/activityDialog">
+        </activity>
+
+    </application>
+
+</manifest>

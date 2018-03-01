@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context="com.chengyi.app.follow.FollowMeActivity">
+
+    <include layout="@layout/title_back"/>
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:text="跟单用户"
+                        style="@style/follow_me"/>
+
+                <TextView
+                        android:id="@+id/tv_user_name"
+                        android:text="跟单用户"
+                        style="@style/follow_me"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:text="跟单彩种"
+                        style="@style/follow_me"/>
+
+                <TextView
+                        android:text="跟单用户"
+                        android:id="@+id/tv__lottery_name"
+                        style="@style/follow_me"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:text="跟单方式"
+                        style="@style/follow_me"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:text="按金额跟单"
+                            android:padding="2dp"
+                            android:id="@+id/tv_jnee"
+
+                            android:textSize="14sp"
+                            android:background="@drawable/item_follow"
+                            android:layout_width="wrap_content"
+                            style="@style/follow_me"/>
+
+                    <TextView
+                            android:text="按比例跟单"
+                            android:id="@+id/tv_bili_gfdj"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/item_follow"
+                            android:padding="2dp"
+                            style="@style/follow_me"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:text="跟单比例"
+                        android:id="@+id/tv_bili"
+                        style="@style/follow_me"/>
+
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_bili"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    <EditText
+                            android:hint=""
+                            android:layout_width="0dp"
+                            android:id="@+id/et_bili"
+                            android:inputType="number"
+                            android:background="@drawable/num_bg"
+                            android:layout_weight="1"
+
+                            style="@style/follow_me"/>
+
+                    <TextView
+                            style="@style/follow_me"
+                            android:text="%"
+                            android:gravity="left"
+                            android:layout_width="wrap_content"
+                            />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:text="跟单金额"
+                        android:id="@+id/tv_follow_jnee"
+                        style="@style/follow_me"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                    <EditText
+                            android:hint=""
+                            android:inputType="number"
+                            android:id="@+id/et_jnee"
+                            android:layout_width="0dp"
+                            android:background="@drawable/num_bg"
+                            android:layout_weight="1"
+                            style="@style/follow_me"/>
+
+                    <TextView
+                            style="@style/follow_me"
+                            android:text="元"
+                            android:gravity="left"
+                            android:layout_width="wrap_content"
+                            />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+
+            android:id="@+id/btn_sub"
+            style="@style/btn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/red"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="32dp"
+            android:text="跟单"
+            />
+
+</LinearLayout>

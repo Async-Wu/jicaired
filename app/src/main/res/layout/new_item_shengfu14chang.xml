@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/football_bg"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="vertical"
+        >
+
+            <TextView
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="1"
+                    android:textColor="@color/lscolor"
+                    android:textSize="15sp"/>
+            <TextView
+
+                    android:id="@+id/liansainame"
+                    android:visibility="gone"
+                    android:text="欧冠"
+                    style="@style/ItemName"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/bisailayout"
+                style="@style/ItemLLTitlle">
+
+            <TextView
+                    android:id="@+id/duiwu1"
+                    style="@style/ItemTitlte"
+                    android:text="大阪樱花"
+            />
+
+            <TextView
+                    android:id="@+id/rangqiu"
+                    style="@style/ItemTitlte_Sub"
+                    android:text="VS"
+            />
+
+            <TextView
+                    android:id="@+id/duiwu2"
+                    android:text="大阪樱花"
+                    style="@style/ItemTitlte"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_m"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+        <!--
+             <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        -->
+
+        <LinearLayout
+                android:id="@+id/leftlayout"
+                style="@style/ItemLeft">
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="03-19"
+                    android:textColor="@color/lscolor"
+                    android:textSize="14sp"/>
+
+
+            <TextView
+                    android:id="@+id/time"
+                    android:text="00:45截止"
+                    style="@style/ItemSubTitlt"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:layout_weight="7"
+                android:layout_marginRight="@dimen/margin_m"
+                android:orientation="vertical">
+            <View style="@style/Line_Item"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal">
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+                        android:id="@+id/shengLy"
+                        style="@style/ItemSecond"
+                >
+
+                    <TextView
+                            android:id="@+id/speilv"
+                            style="@style/ItemSecond"
+                            android:text="主胜3"
+                    />
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+                        android:id="@+id/pingLy"
+                        style="@style/ItemSecond">
+
+
+                    <TextView
+                            android:id="@+id/ppeilv"
+
+                            android:text="平1"
+                            style="@style/ItemSecond"
+                    />
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+                <LinearLayout
+                        android:id="@+id/fuLy"
+                        style="@style/ItemSecond">
+
+
+                    <TextView
+                            android:id="@+id/fpeilv"
+                            style="@style/ItemSecond"
+                            android:text="主胜3"
+                    />
+                </LinearLayout>
+                <View style="@style/Line_V_Item"/>
+            </LinearLayout>
+            <View style="@style/Line_Item"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<View style="@style/Line_Item" />
+</LinearLayout>

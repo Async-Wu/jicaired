@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:background="@color/main_bg_color"
+                android:layout_height="wrap_content"
+        >
+
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/main_bg_color"
+            android:id="@+id/layouttopselect"
+            >
+
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/gray"
+                android:text="普通:"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+            <TextView
+                    android:id="@+id/btn1"
+                    android:text="组三单式"
+                    android:visibility="gone"
+                    style="@style/popstyle"/>
+
+            <TextView
+                    android:id="@+id/btn2"
+                    style="@style/popstyle"
+                    android:text="组三复式"
+                    />
+
+            <TextView
+                    android:id="@+id/btn3"
+
+                    android:text="组六"
+                    style="@style/popstyle"/>
+
+            <TextView
+                    android:id="@+id/btn4"
+                    style="@style/popstyle"
+                    android:text="直选"
+                    />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/gray"
+                android:layout_marginTop="2dp"
+                android:text="胆拖:"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                >
+
+            <TextView
+                    android:id="@+id/btn5"
+
+                    android:text="组3"
+                    style="@style/popstyle"/>
+
+            <TextView
+                    android:id="@+id/btn6"
+
+                    android:text="组6"
+                    style="@style/popstyle"/>
+
+            <TextView
+                    android:id="@+id/btn7"
+                    android:text="直选"
+                    style="@style/popstyle"/>
+
+            <TextView
+                    android:visibility="invisible"
+                    style="@style/popstyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/football_bg"
+        android:orientation="vertical">
+
+    <include layout="@layout/title_actionbar"
+             android:id="@+id/tile">
+    </include>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@id/tile"
+            android:layout_marginTop="@dimen/margin_m"
+            android:orientation="vertical">
+
+        <include layout="@layout/item_add"/>
+
+
+        <ListView
+                android:id="@+id/fourlistview"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_weight="1"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:layout_marginRight="@dimen/margin_double_doule"
+                android:layout_marginLeft="@dimen/margin_double_doule"
+                android:dividerHeight="0px"
+                android:fastScrollEnabled="true"
+                android:listSelector="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/fragment_lottery_football_cart_bottom"/>
+
+</LinearLayout>

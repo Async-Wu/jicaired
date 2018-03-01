@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_left"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:layout_marginRight="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+    <include layout="@layout/title_back"  android:id="@+id/top"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/textsize_normal"
+         android:textColor="@color/gray"
+        android:text="操作日期:" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:textSize="@dimen/textsize_normal"
+        android:textColor="@color/black"
+        android:layout_marginLeft="3dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:text="操作方式:"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textsize_normal" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignLeft="@+id/time"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_normal" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/gray"
+        android:text="备"
+        android:textSize="@dimen/textsize_normal" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/type"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/TextView02"
+        android:text=""
+        android:textColor="@color/black"
+        android:lineSpacingExtra="5dp"
+        android:textSize="@dimen/textsize_normal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:text="注:若有疑问,请联系客服 400-666-7575" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/detail"
+        android:layout_alignBottom="@+id/detail"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView02"
+        android:gravity="right"
+        android:text="注:" />
+	 
+</RelativeLayout>

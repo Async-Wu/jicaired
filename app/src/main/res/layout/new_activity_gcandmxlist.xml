@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 购彩记录，资金明细通用 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_actionbar"/>
+   
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_loading" >
+    </include>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_failed"
+        android:visibility="gone" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/toplayoutselect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wofaqidebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="我发起的"
+            android:textColor="@color/yellow" />
+
+        <Button
+            android:id="@+id/wocanyudebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="我参与的"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+    <com.chengyi.app.view.scoller.MyRefreshListView
+        android:id="@+id/refreshListView"
+        android:layout_width="fill_parent"
+        android:scrollbars="none"
+        android:layout_height="fill_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@color/football_bg"
+        android:dividerHeight="@dimen/list_view_divider_high_s" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/item_no_data"
+        android:visibility="gone" >
+    </include>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/football_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <include
+
+                    layout="@layout/title_back">
+            </include>
+
+            <LinearLayout
+                    android:id="@+id/btnlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_m"
+                    android:layout_marginLeft="@dimen/margin_double"
+                    android:layout_marginRight="@dimen/margin_double"
+                    android:orientation="horizontal"
+            >
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:id="@+id/shouxuan"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:background="@drawable/add_bg_left">
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_marginLeft="@dimen/margin_m"
+                               android:layout_height="wrap_content"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/addother"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="@dimen/margin_m"
+                              android:textSize="@dimen/txt_item_size"
+                              android:textColor="@color/grey_txt"
+                              android:layout_marginRight="@dimen/margin_m"
+                              android:text="继续添加"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:gravity="center"
+                              android:layout_marginLeft="-1dp"
+                              android:id="@+id/jixuan"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:background="@drawable/add_bg_right">
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_marginLeft="@dimen/margin_m"
+                               android:layout_height="wrap_content"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/addother"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="@dimen/margin_m"
+                              android:textSize="@dimen/txt_item_size"
+                              android:textColor="@color/grey_txt"
+                              android:layout_marginRight="@dimen/margin_m"
+                              android:text="机选一注"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:choiceMode="singleChoice"
+
+                    android:divider="@color/football_bg"
+                    android:dividerHeight="@dimen/margin_m"
+                    android:layout_marginTop="@dimen/margin_double"
+                    android:scrollbars="none"
+                    android:layout_marginLeft="@dimen/margin_double_doule"
+                    android:layout_marginRight="@dimen/margin_double_doule"
+                    android:fastScrollEnabled="true"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@android:color/transparent"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/imageViewbg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/default_pop_bg"
+                android:visibility="gone"/>
+    </FrameLayout>
+    <View style="@style/Line_Item"/>
+    <include
+            layout="@layout/new_touzhuqueren_bottom"/>
+
+</LinearLayout>

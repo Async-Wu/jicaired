@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        >
+
+    <include
+            layout="@layout/title_actionbar"
+        >
+    </include>
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:background="@drawable/xinshou1"/>
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/xinshou3"/>
+
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/xinshou5"/>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/textsize_normal"
+            android:text="注:新手特权活动只对新注册用户有效。"/>
+
+</LinearLayout>

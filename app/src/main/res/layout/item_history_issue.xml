@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:id="@+id/ll_isue"
+              android:paddingLeft="16dp"
+
+              android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="16sp"
+                  android:textColor="@color/football_normal"
+                  android:id="@+id/issue_one"  />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/content_one"
+                  android:textColor="@color/red"
+                  android:textSize="16sp"
+                  android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="16sp"
+                  android:textColor="@color/football_normal"
+                  android:id="@+id/issue_two"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/content_two"  android:textColor="@color/red"
+                  android:textSize="16sp"
+                  android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text=""  android:textSize="16sp"
+                  android:textColor="@color/football_normal"
+                  android:id="@+id/issue_three"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/content_three"  android:textColor="@color/red"
+                  android:textSize="16sp"
+                  android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="16sp"
+                  android:textColor="@color/football_normal"
+                  android:id="@+id/issue_four"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/content_four"
+                  android:textColor="@color/red"
+                  android:textSize="16sp"
+                  android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="16sp"
+                  android:textColor="@color/football_normal"
+                  android:id="@+id/issue_five"
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/content_five"
+                  android:textColor="@color/red"
+                  android:textSize="16sp"
+                  android:text=""/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  新时时彩-->
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color"
+>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@color/main_bg_color"
+
+            android:id="@+id/layouttopselect"
+    >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+        >
+            <TextView
+                    android:id="@+id/btn1"
+                    android:text="前一"
+                    style="@style/PopXy"/>
+            <TextView
+                    android:id="@+id/btn2"
+
+                    android:text="前二"
+                    style="@style/PopXy"/>
+            <TextView
+                    android:id="@+id/btn3"
+                    style="@style/PopXy"
+                    android:text="前三"
+            />
+            <TextView
+                    android:id="@+id/btn4"
+
+                    android:text="位置"
+                    style="@style/PopXy"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+        >
+            <TextView
+                    android:id="@+id/btn5"
+
+                    android:text="组2"
+                    style="@style/PopXy"/>
+            <TextView
+                    android:id="@+id/btn6"
+
+                    android:text="组3"
+                    style="@style/PopXy"/>
+            <TextView
+                    android:id="@+id/btn7"
+
+                    android:text="大小奇偶"
+                    style="@style/PopXy"/>
+            <TextView
+                    android:visibility="invisible"
+                    style="@style/PopXy"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+    >
+
+    <TextView
+        android:id="@+id/k3tishitext"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 猜中顺子即中奖"
+        android:textColor="@color/lscolor"
+		android:textSize="18sp"
+
+        />
+    <LinearLayout
+        android:id="@+id/shunzilayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/select_line"
+        android:clickable="true"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+		android:layout_weight="1"
+         >
+	       <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="@dimen/kuaisanshunzi"
+	            style="@style/textKS3"
+	            android:text="123" />
+	       <TextView
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="@dimen/kuaisanshunzi"
+	            style="@style/textKS3"
+	            android:text="234" />
+        
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        >
+	       <TextView
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="@dimen/kuaisanshunzi"
+	            style="@style/textKS3"
+	            android:text="345" />
+	        <TextView
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="@dimen/kuaisanshunzi"
+	            style="@style/textKS3"
+	            android:text="456" />
+	    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

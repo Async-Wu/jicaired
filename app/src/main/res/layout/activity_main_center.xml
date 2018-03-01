@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"  
+		    >
+		  
+			<FrameLayout
+			        android:id="@+id/main_container" 
+			        android:layout_below="@+id/ffootballtopbarLayout"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent">
+			</FrameLayout>
+			
+		    <ImageView
+	          android:id="@+id/shadow_left" 
+	          android:clickable="true"
+	          android:layout_width="wrap_content"
+	          android:layout_height="fill_parent"
+	          android:src="@drawable/shadow_left"
+	          android:scaleType="fitStart"
+	          android:layout_alignParentLeft="true"
+	          android:visibility="visible"/>
+		    <ImageView
+	          android:id="@+id/shadow_right" 
+	          android:clickable="true"
+	          android:layout_width="wrap_content"
+	          android:layout_height="fill_parent"
+	          android:src="@drawable/shadow_right"
+	          android:scaleType="fitEnd"
+	          android:layout_alignParentRight="true"
+	          android:visibility="gone"/>
+		   
+		    
+</RelativeLayout>
